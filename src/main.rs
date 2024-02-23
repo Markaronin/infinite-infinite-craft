@@ -111,7 +111,10 @@ async fn main() {
                 if !nodes.contains_key(&pair_result.result) {
                     log::info!("New node: {}", pair_result.result);
                     if pair_result.is_new {
-                        log::info!("Discovered new node: {}", pair_result.result);
+                        log::info!(
+                            "Discovered new node: {} (from {first} and {second})",
+                            pair_result.result
+                        );
                     }
                     nodes.insert(pair_result.result.clone(), pair_result);
                 }
