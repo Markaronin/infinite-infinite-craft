@@ -102,17 +102,26 @@ async fn main() {
         let first = nodes.keys().nth(index_1).unwrap();
         let second = nodes.keys().nth(index_2).unwrap();
 
-        let pair_key = format!("{first}|+|{second}");
+        // Sort pairs so that we don't make the same query twice
+        let pair_key = if first < second {
+            format!("{first}|+|{second}")
+        } else {
+            format!("{second}|+|{first}")
+        };
 
         if !pairs.contains_key(&pair_key) {
             let pair_result = get_pair_value(first, second).await;
             pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
             if let Some(pair_result) = pair_result {
                 if !nodes.contains_key(&pair_result.result) {
-                    log::info!("New node: {}", pair_result.result);
                     if pair_result.is_new {
                         log::info!(
                             "Discovered new node: {} (from {first} and {second})",
+                            pair_result.result
+                        );
+                    } else {
+                        log::info!(
+                            "New node: {} (from {first} and {second})",
                             pair_result.result
                         );
                     }
