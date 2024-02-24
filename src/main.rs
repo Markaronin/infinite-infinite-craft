@@ -1,7 +1,32 @@
+use clap::{Parser, Subcommand};
 use rand::prelude::*;
 use reqwest::StatusCode;
-use serde::{Deserialize, Serialize};
+use serde::{de::DeserializeOwned, Deserialize, Serialize};
 use std::{collections::BTreeMap, time::Duration};
+
+#[derive(Debug, Parser)]
+struct Cli {
+    #[command(subcommand)]
+    pub command: Command,
+}
+
+/// Doc comment
+#[derive(Debug, Subcommand)]
+enum Command {
+    Combine,
+
+    /// Meant to import your existing save from the website into the list of elements in this repo
+    ///
+    /// Prepare the elements file by copying the "infinite-craft-data" value from localstorage for https://neal.fun/infinite-craft/
+    /// and pasting it into a file, then pass that file path to this command.
+    /// The file should look something like {"elements": [{"text": "Water", "emoji":"💧", discovered: false }, ...]}
+    MergeExistingNodes {
+        #[arg(short, long)]
+        elements_file_path: String,
+    },
+
+    SerializeForPage,
+}
 
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -11,50 +36,82 @@ struct Element {
     pub is_new: bool,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+struct SerializedElements {
+    elements: Vec<SerializedElement>,
+}
+/**
+ *  The element as it appears in localstorage on the website
+ */
+#[derive(Debug, Serialize, Deserialize)]
+struct SerializedElement {
+    text: String,
+    emoji: String,
+    discovered: bool,
+}
+impl From<Element> for SerializedElement {
+    fn from(value: Element) -> Self {
+        SerializedElement {
+            text: value.result,
+            emoji: value.emoji,
+            discovered: value.is_new,
+        }
+    }
+}
+impl From<SerializedElement> for Element {
+    fn from(value: SerializedElement) -> Self {
+        Element {
+            result: value.text,
+            emoji: value.emoji,
+            is_new: value.discovered,
+        }
+    }
+}
+
+fn read_file_as_json<T>(file_path: &str) -> T
+where
+    T: DeserializeOwned,
+{
+    serde_json::from_str(&std::fs::read_to_string(file_path).unwrap()).unwrap()
+}
+fn write_file_as_json<T>(file_path: &str, contents: &T, pretty: bool)
+where
+    T: Serialize,
+{
+    let contents = if pretty {
+        serde_json::to_string_pretty(contents)
+    } else {
+        serde_json::to_string(contents)
+    }
+    .unwrap();
+    std::fs::write(file_path, contents).unwrap();
+}
+
 type Nodes = BTreeMap<String, Element>;
 type Pairs = BTreeMap<String, Option<String>>;
-fn save(nodes: &Nodes, pairs: &Pairs) {
-    let nodes_serialized = serde_json::to_string_pretty(nodes).unwrap();
-    let pairs_serialized = serde_json::to_string_pretty(pairs).unwrap();
-    let serialized_for_page = {
-        let mut map = BTreeMap::new();
-        map.insert(
-            "elements",
-            nodes
-                .values()
-                .map(|node| {
-                    #[derive(Debug, Serialize)]
-                    struct SerializedElement {
-                        text: String,
-                        emoji: String,
-                        discovered: bool,
-                    }
-                    impl From<&Element> for SerializedElement {
-                        fn from(value: &Element) -> Self {
-                            SerializedElement {
-                                text: value.result.clone(),
-                                emoji: value.emoji.clone(),
-                                discovered: value.is_new,
-                            }
-                        }
-                    }
 
-                    SerializedElement::from(node)
-                })
-                .collect::<Vec<_>>(),
-        );
-        serde_json::to_string(&map).unwrap()
-    };
-    std::fs::write("nodes.json", nodes_serialized).unwrap();
-    std::fs::write("pairs.json", pairs_serialized).unwrap();
-    std::fs::write("serialized_for_page.json", serialized_for_page).unwrap();
-}
 fn load() -> (Nodes, Pairs) {
-    let nodes: Nodes =
-        serde_json::from_str(&std::fs::read_to_string("nodes.json").unwrap()).unwrap();
-    let pairs: Pairs =
-        serde_json::from_str(&std::fs::read_to_string("pairs.json").unwrap()).unwrap();
+    let nodes: Nodes = read_file_as_json("nodes.json");
+    let pairs: Pairs = read_file_as_json("pairs.json");
     (nodes, pairs)
+}
+
+fn save(nodes: &Nodes, pairs: &Pairs) {
+    write_file_as_json("nodes.json", nodes, true);
+    write_file_as_json("pairs.json", pairs, true);
+}
+
+fn serialize_for_page() {
+    let (nodes, _) = load();
+
+    let elements = SerializedElements {
+        elements: nodes
+            .values()
+            .cloned()
+            .map(|node| SerializedElement::from(node))
+            .collect::<Vec<_>>(),
+    };
+    write_file_as_json("serialized_for_page.json", &elements, false);
 }
 
 async fn get_pair_value(first: &str, second: &str) -> Option<Element> {
@@ -88,9 +145,7 @@ async fn get_pair_value(first: &str, second: &str) -> Option<Element> {
     }
 }
 
-#[tokio::main]
-async fn main() {
-    simple_logger::init_with_level(log::Level::Info).unwrap();
+async fn do_combinations() {
     let mut rng = thread_rng();
 
     let (mut nodes, mut pairs) = load();
@@ -133,5 +188,50 @@ async fn main() {
 
             std::thread::sleep(Duration::from_millis(500));
         }
+    }
+}
+
+fn merge_existing_nodes(elements_file_path: &str) {
+    let (mut nodes, pairs) = load();
+
+    let new_elements: SerializedElements = read_file_as_json(elements_file_path);
+
+    for element in new_elements
+        .elements
+        .into_iter()
+        .map(|element| Element::from(element))
+    {
+        match nodes.entry(element.result.clone()) {
+            std::collections::btree_map::Entry::Vacant(vacant_entry) => {
+                log::info!("Inserting {}", element.result);
+                vacant_entry.insert(element);
+            }
+            std::collections::btree_map::Entry::Occupied(entry) => {
+                if entry.get() != &element {
+                    panic!(
+                        "Non-matching elements despite matching names\n{:?}\n{:?}",
+                        entry.get(),
+                        element
+                    )
+                }
+            }
+        }
+    }
+
+    save(&nodes, &pairs)
+}
+
+#[tokio::main]
+async fn main() {
+    simple_logger::init_with_level(log::Level::Info).unwrap();
+
+    let cli = Cli::parse();
+
+    match cli.command {
+        Command::Combine => do_combinations().await,
+        Command::MergeExistingNodes { elements_file_path } => {
+            merge_existing_nodes(&elements_file_path)
+        }
+        Command::SerializeForPage => serialize_for_page(),
     }
 }
