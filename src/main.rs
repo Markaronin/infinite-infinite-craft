@@ -2,7 +2,7 @@ use clap::{Parser, Subcommand};
 use rand::{distributions::WeightedIndex, prelude::*};
 use reqwest::StatusCode;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
-use std::{collections::BTreeMap, time::Duration};
+use std::{collections::BTreeMap, time::Duration, time::Instant};
 
 #[derive(Debug, Parser)]
 struct Cli {
@@ -13,6 +13,7 @@ struct Cli {
 /// Doc comment
 #[derive(Debug, Subcommand)]
 enum Command {
+    /// Run random combinations every 0.5ish seconds to create new elements
     Combine,
 
     /// Meant to import your existing save from the website into the list of elements in this repo
@@ -25,6 +26,7 @@ enum Command {
         elements_file_path: String,
     },
 
+    /// Export the data in a way that you can copy into your localstorage and interact with
     SerializeForPage,
 }
 
@@ -97,8 +99,12 @@ fn load() -> (Elements, Pairs) {
 }
 
 fn save(elements: &Elements, pairs: &Pairs) {
+    let start = Instant::now();
+
     write_file_as_json("elements.json", elements, true);
     write_file_as_json("pairs.json", pairs, true);
+
+    log::debug!("Saving took {} milliseconds", start.elapsed().as_millis())
 }
 
 fn serialize_for_page() {
@@ -114,14 +120,8 @@ fn serialize_for_page() {
     write_file_as_json("serialized_for_page.json", &elements, false);
 }
 
-async fn get_pair_value(first: &str, second: &str) -> Option<Element> {
-    let client = reqwest::Client::builder()
-        .user_agent(
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        )
-        .http1_title_case_headers()
-        .build()
-        .unwrap();
+async fn get_pair_value(client: &reqwest::Client, first: &str, second: &str) -> Option<Element> {
+    let start = Instant::now();
 
     let response = client
         .get(format!(
@@ -137,16 +137,28 @@ async fn get_pair_value(first: &str, second: &str) -> Option<Element> {
         panic!("{}", response.text().await.unwrap())
     } else {
         let element: Element = serde_json::from_str(&response.text().await.unwrap()).unwrap();
-        if element.result == "Nothing" {
+        let response = if element.result == "Nothing" {
             None
         } else {
             Some(element)
-        }
+        };
+
+        log::debug!("Request took {} milliseconds", start.elapsed().as_millis());
+
+        response
     }
 }
 
 async fn do_combinations() {
     let mut rng = thread_rng();
+
+    let client = reqwest::Client::builder()
+        .user_agent(
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
+        )
+        .http1_title_case_headers()
+        .build()
+        .unwrap();
 
     let (mut elements, mut pairs) = load();
 
@@ -174,7 +186,7 @@ async fn do_combinations() {
             }
         };
 
-        let pair_result = get_pair_value(first, second).await;
+        let pair_result = get_pair_value(&client, first, second).await;
         pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
         if let Some(pair_result) = pair_result {
             if !elements.contains_key(&pair_result.result) {
