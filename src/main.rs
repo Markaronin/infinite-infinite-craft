@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use rand::prelude::*;
+use rand::{distributions::WeightedIndex, prelude::*};
 use reqwest::StatusCode;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 use std::{collections::BTreeMap, time::Duration};
@@ -151,43 +151,51 @@ async fn do_combinations() {
     let (mut elements, mut pairs) = load();
 
     loop {
-        let index_1 = rng.gen_range(0..elements.len());
-        let index_2 = rng.gen_range(0..elements.len());
+        // Weight it towards shorter objects - an element with 1 letter is ~5x more likely to show up than an element with 10+ letters
+        let distribution =
+            WeightedIndex::new(elements.keys().map(|element| 12 - element.len().min(10))).unwrap();
 
-        let first = elements.keys().nth(index_1).unwrap();
-        let second = elements.keys().nth(index_2).unwrap();
+        let (first, second, pair_key) = loop {
+            let index_1 = distribution.sample(&mut rng);
+            let index_2 = distribution.sample(&mut rng);
 
-        // Sort pairs so that we don't make the same query twice
-        let pair_key = if first < second {
-            format!("{first}|+|{second}")
-        } else {
-            format!("{second}|+|{first}")
+            let first = elements.keys().nth(index_1).unwrap();
+            let second = elements.keys().nth(index_2).unwrap();
+
+            // Sort pairs so that we don't make the same query twice
+            let pair_key = if first < second {
+                format!("{first}|+|{second}")
+            } else {
+                format!("{second}|+|{first}")
+            };
+
+            if !pairs.contains_key(&pair_key) {
+                break (first, second, pair_key);
+            }
         };
 
-        if !pairs.contains_key(&pair_key) {
-            let pair_result = get_pair_value(first, second).await;
-            pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
-            if let Some(pair_result) = pair_result {
-                if !elements.contains_key(&pair_result.result) {
-                    if pair_result.is_new {
-                        log::info!(
-                            "Discovered new element: {} (from {first} and {second})",
-                            pair_result.result
-                        );
-                    } else {
-                        log::info!(
-                            "New element: {} (from {first} and {second})",
-                            pair_result.result
-                        );
-                    }
-                    elements.insert(pair_result.result.clone(), pair_result);
+        let pair_result = get_pair_value(first, second).await;
+        pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
+        if let Some(pair_result) = pair_result {
+            if !elements.contains_key(&pair_result.result) {
+                if pair_result.is_new {
+                    log::info!(
+                        "Discovered new element: {} (from {first} and {second})",
+                        pair_result.result
+                    );
+                } else {
+                    log::info!(
+                        "New element: {} (from {first} and {second})",
+                        pair_result.result
+                    );
                 }
+                elements.insert(pair_result.result.clone(), pair_result);
             }
-
-            save(&elements, &pairs);
-
-            std::thread::sleep(Duration::from_millis(500));
         }
+
+        save(&elements, &pairs);
+
+        std::thread::sleep(Duration::from_millis(500));
     }
 }
 

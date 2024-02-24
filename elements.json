@@ -4,6 +4,11 @@
     "emoji": "🕵️",
     "isNew": false
   },
+  "24": {
+    "result": "24",
+    "emoji": "🕛",
+    "isNew": false
+  },
   "9/11": {
     "result": "9/11",
     "emoji": "🚑",
@@ -69,6 +74,11 @@
     "emoji": "🦴",
     "isNew": false
   },
+  "Admiral": {
+    "result": "Admiral",
+    "emoji": "⚓️",
+    "isNew": false
+  },
   "Airplane": {
     "result": "Airplane",
     "emoji": "✈️",
@@ -114,6 +124,16 @@
     "emoji": "🌾",
     "isNew": false
   },
+  "Amberjack": {
+    "result": "Amberjack",
+    "emoji": "🐟",
+    "isNew": false
+  },
+  "America": {
+    "result": "America",
+    "emoji": "🇺🇸",
+    "isNew": false
+  },
   "Ammonite": {
     "result": "Ammonite",
     "emoji": "🦕",
@@ -127,6 +147,11 @@
   "Anemone": {
     "result": "Anemone",
     "emoji": "🌊",
+    "isNew": false
+  },
+  "Anesthesia": {
+    "result": "Anesthesia",
+    "emoji": "💤",
     "isNew": false
   },
   "Angel": {
@@ -149,9 +174,24 @@
     "emoji": "🐜",
     "isNew": false
   },
+  "Ant Train": {
+    "result": "Ant Train",
+    "emoji": "🐜",
+    "isNew": false
+  },
   "Ant-Man": {
     "result": "Ant-Man",
     "emoji": "🐜",
+    "isNew": false
+  },
+  "Ant-hill": {
+    "result": "Ant-hill",
+    "emoji": "🐜",
+    "isNew": false
+  },
+  "Antarctica": {
+    "result": "Antarctica",
+    "emoji": "🌨️",
     "isNew": false
   },
   "Antares": {
@@ -169,6 +209,11 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Antman": {
+    "result": "Antman",
+    "emoji": "🐜",
+    "isNew": false
+  },
   "Antpool": {
     "result": "Antpool",
     "emoji": "🐜",
@@ -184,6 +229,11 @@
     "emoji": "🍎",
     "isNew": false
   },
+  "Aqua Claus": {
+    "result": "Aqua Claus",
+    "emoji": "🎅",
+    "isNew": false
+  },
   "Aquaman": {
     "result": "Aquaman",
     "emoji": "🐠",
@@ -192,6 +242,11 @@
   "Aquarium": {
     "result": "Aquarium",
     "emoji": "🐠",
+    "isNew": false
+  },
+  "Arceus": {
+    "result": "Arceus",
+    "emoji": "🌌",
     "isNew": false
   },
   "Archer": {
@@ -254,6 +309,11 @@
     "emoji": "🦕",
     "isNew": true
   },
+  "Army": {
+    "result": "Army",
+    "emoji": "🚁",
+    "isNew": false
+  },
   "Ash": {
     "result": "Ash",
     "emoji": "🌋",
@@ -272,6 +332,11 @@
   "Assassin": {
     "result": "Assassin",
     "emoji": "🔪",
+    "isNew": false
+  },
+  "Asteroid": {
+    "result": "Asteroid",
+    "emoji": "💫",
     "isNew": false
   },
   "Astronaut": {
@@ -294,6 +359,11 @@
     "emoji": "⚛️",
     "isNew": false
   },
+  "Atom Bomb": {
+    "result": "Atom Bomb",
+    "emoji": "💣",
+    "isNew": false
+  },
   "Avalanche": {
     "result": "Avalanche",
     "emoji": "🌨️",
@@ -314,9 +384,29 @@
     "emoji": "👯",
     "isNew": false
   },
+  "Baby": {
+    "result": "Baby",
+    "emoji": "👶",
+    "isNew": false
+  },
   "Bacon": {
     "result": "Bacon",
     "emoji": "🥓",
+    "isNew": false
+  },
+  "Baconator": {
+    "result": "Baconator",
+    "emoji": "🍔",
+    "isNew": false
+  },
+  "Ballerina": {
+    "result": "Ballerina",
+    "emoji": "🩰",
+    "isNew": false
+  },
+  "Ballet": {
+    "result": "Ballet",
+    "emoji": "🩰",
     "isNew": false
   },
   "Band": {
@@ -329,9 +419,19 @@
     "emoji": "💰",
     "isNew": false
   },
+  "Banker": {
+    "result": "Banker",
+    "emoji": "💼",
+    "isNew": false
+  },
   "Barbecue": {
     "result": "Barbecue",
     "emoji": "🍖",
+    "isNew": false
+  },
+  "Barrel": {
+    "result": "Barrel",
+    "emoji": "🍺",
     "isNew": false
   },
   "Bat": {
@@ -347,6 +447,11 @@
   "Batman": {
     "result": "Batman",
     "emoji": "🦇",
+    "isNew": false
+  },
+  "Batosaurus Rex": {
+    "result": "Batosaurus Rex",
+    "emoji": "🦖",
     "isNew": false
   },
   "Beach": {
@@ -489,9 +594,19 @@
     "emoji": "👬",
     "isNew": false
   },
+  "Bible": {
+    "result": "Bible",
+    "emoji": "📖",
+    "isNew": false
+  },
   "Big Bang": {
     "result": "Big Bang",
     "emoji": "💥",
+    "isNew": false
+  },
+  "Big Mac": {
+    "result": "Big Mac",
+    "emoji": "🍔",
     "isNew": false
   },
   "Bigfoot": {
@@ -554,6 +669,11 @@
     "emoji": "🦢",
     "isNew": false
   },
+  "Bless You": {
+    "result": "Bless You",
+    "emoji": "🤧",
+    "isNew": false
+  },
   "Blizzard": {
     "result": "Blizzard",
     "emoji": "❄️",
@@ -562,6 +682,16 @@
   "Blockchain": {
     "result": "Blockchain",
     "emoji": "🔗",
+    "isNew": false
+  },
+  "Blog": {
+    "result": "Blog",
+    "emoji": "📝",
+    "isNew": false
+  },
+  "Blogfrost": {
+    "result": "Blogfrost",
+    "emoji": "❄️📝",
     "isNew": false
   },
   "Blue Screen": {
@@ -594,9 +724,19 @@
     "emoji": "💣",
     "isNew": false
   },
+  "Bond": {
+    "result": "Bond",
+    "emoji": "🍸",
+    "isNew": false
+  },
   "Bong": {
     "result": "Bong",
     "emoji": "🌿",
+    "isNew": false
+  },
+  "Bonsai": {
+    "result": "Bonsai",
+    "emoji": "🌳",
     "isNew": false
   },
   "Booger": {
@@ -624,6 +764,11 @@
     "emoji": "💥",
     "isNew": false
   },
+  "Boom Boom": {
+    "result": "Boom Boom",
+    "emoji": "💥",
+    "isNew": false
+  },
   "Boulder": {
     "result": "Boulder",
     "emoji": "🪨",
@@ -642,6 +787,11 @@
   "Bridezilla": {
     "result": "Bridezilla",
     "emoji": "👰",
+    "isNew": false
+  },
+  "Broken Heart": {
+    "result": "Broken Heart",
+    "emoji": "💔",
     "isNew": false
   },
   "Buddha": {
@@ -689,6 +839,31 @@
     "emoji": "🤖",
     "isNew": false
   },
+  "C3p0": {
+    "result": "C3p0",
+    "emoji": "🤖",
+    "isNew": false
+  },
+  "C3pia": {
+    "result": "C3pia",
+    "emoji": "🤖",
+    "isNew": false
+  },
+  "C3po": {
+    "result": "C3po",
+    "emoji": "🤖",
+    "isNew": false
+  },
+  "C4": {
+    "result": "C4",
+    "emoji": "💣",
+    "isNew": false
+  },
+  "C4po": {
+    "result": "C4po",
+    "emoji": "🤖",
+    "isNew": false
+  },
   "Cable": {
     "result": "Cable",
     "emoji": "📺",
@@ -724,6 +899,11 @@
     "emoji": "🐒",
     "isNew": false
   },
+  "Caesarian": {
+    "result": "Caesarian",
+    "emoji": "👶",
+    "isNew": false
+  },
   "Cake": {
     "result": "Cake",
     "emoji": "🎂",
@@ -754,9 +934,19 @@
     "emoji": "🍖",
     "isNew": false
   },
+  "Cannibalism": {
+    "result": "Cannibalism",
+    "emoji": "🍖",
+    "isNew": false
+  },
   "Cannon": {
     "result": "Cannon",
     "emoji": "🔫",
+    "isNew": false
+  },
+  "Cappuccino": {
+    "result": "Cappuccino",
+    "emoji": "☕️",
     "isNew": false
   },
   "Captain": {
@@ -772,6 +962,11 @@
   "Captain Atlantis": {
     "result": "Captain Atlantis",
     "emoji": "🌊",
+    "isNew": false
+  },
+  "Captain Boom": {
+    "result": "Captain Boom",
+    "emoji": "💥",
     "isNew": false
   },
   "Captain Coral": {
@@ -854,6 +1049,11 @@
     "emoji": "🏴‍☠️",
     "isNew": false
   },
+  "Captain Snowtopus": {
+    "result": "Captain Snowtopus",
+    "emoji": "🐙",
+    "isNew": false
+  },
   "Captain Tux": {
     "result": "Captain Tux",
     "emoji": "🐧",
@@ -894,6 +1094,11 @@
     "emoji": "🚲",
     "isNew": false
   },
+  "Castle": {
+    "result": "Castle",
+    "emoji": "🏰",
+    "isNew": false
+  },
   "Castro": {
     "result": "Castro",
     "emoji": "🎙️",
@@ -912,6 +1117,11 @@
   "Centaur": {
     "result": "Centaur",
     "emoji": "🦄",
+    "isNew": false
+  },
+  "Chair": {
+    "result": "Chair",
+    "emoji": "🪑",
     "isNew": false
   },
   "Chameleon": {
@@ -954,14 +1164,34 @@
     "emoji": "🦖🔴",
     "isNew": false
   },
+  "Cheddar": {
+    "result": "Cheddar",
+    "emoji": "🧀",
+    "isNew": false
+  },
+  "Cheese": {
+    "result": "Cheese",
+    "emoji": "🧀",
+    "isNew": false
+  },
   "Cheeseburger": {
     "result": "Cheeseburger",
     "emoji": "🍔",
     "isNew": false
   },
+  "Chernobyl": {
+    "result": "Chernobyl",
+    "emoji": "🌋",
+    "isNew": false
+  },
   "Chest": {
     "result": "Chest",
     "emoji": "🗃️",
+    "isNew": false
+  },
+  "Chewbacca": {
+    "result": "Chewbacca",
+    "emoji": "🐻",
     "isNew": false
   },
   "Chicken": {
@@ -1079,6 +1309,11 @@
     "emoji": "🍩",
     "isNew": false
   },
+  "Circus": {
+    "result": "Circus",
+    "emoji": "🎪",
+    "isNew": false
+  },
   "City": {
     "result": "City",
     "emoji": "🏙️",
@@ -1087,6 +1322,11 @@
   "Clay": {
     "result": "Clay",
     "emoji": "🏺",
+    "isNew": false
+  },
+  "Clean Car": {
+    "result": "Clean Car",
+    "emoji": "🚗",
     "isNew": false
   },
   "Clean Dinosaur": {
@@ -1124,6 +1364,11 @@
     "emoji": "👑",
     "isNew": false
   },
+  "Clippy": {
+    "result": "Clippy",
+    "emoji": "📎",
+    "isNew": false
+  },
   "Clock": {
     "result": "Clock",
     "emoji": "⏰",
@@ -1154,6 +1399,11 @@
     "emoji": "☁️",
     "isNew": false
   },
+  "Clown": {
+    "result": "Clown",
+    "emoji": "🤡",
+    "isNew": false
+  },
   "Clownfish": {
     "result": "Clownfish",
     "emoji": "🐠",
@@ -1167,6 +1417,11 @@
   "Cobra Kai": {
     "result": "Cobra Kai",
     "emoji": "🥋",
+    "isNew": false
+  },
+  "Cobra Wine": {
+    "result": "Cobra Wine",
+    "emoji": "🐍",
     "isNew": false
   },
   "Cobraman": {
@@ -1229,6 +1484,16 @@
     "emoji": "🍣",
     "isNew": false
   },
+  "Coffee": {
+    "result": "Coffee",
+    "emoji": "☕️",
+    "isNew": false
+  },
+  "Cold": {
+    "result": "Cold",
+    "emoji": "❄️",
+    "isNew": false
+  },
   "Cologne": {
     "result": "Cologne",
     "emoji": "🧴",
@@ -1242,6 +1507,11 @@
   "Colossus": {
     "result": "Colossus",
     "emoji": "🏗️",
+    "isNew": false
+  },
+  "Comet": {
+    "result": "Comet",
+    "emoji": "🌌",
     "isNew": false
   },
   "Communist": {
@@ -1284,9 +1554,19 @@
     "emoji": "🍪",
     "isNew": false
   },
+  "Cookzilla": {
+    "result": "Cookzilla",
+    "emoji": "🍳",
+    "isNew": false
+  },
   "Coral": {
     "result": "Coral",
     "emoji": "🐠",
+    "isNew": false
+  },
+  "Coral Hulk": {
+    "result": "Coral Hulk",
+    "emoji": "🐙",
     "isNew": false
   },
   "Coral Mermaid": {
@@ -1309,6 +1589,21 @@
     "emoji": "🤒",
     "isNew": false
   },
+  "Coughing Poseidon": {
+    "result": "Coughing Poseidon",
+    "emoji": "🤧",
+    "isNew": false
+  },
+  "Coughy": {
+    "result": "Coughy",
+    "emoji": "🤧",
+    "isNew": false
+  },
+  "Cowboy": {
+    "result": "Cowboy",
+    "emoji": "🤠",
+    "isNew": false
+  },
   "Crab": {
     "result": "Crab",
     "emoji": "🦀",
@@ -1329,6 +1624,11 @@
     "emoji": "🦀",
     "isNew": false
   },
+  "Crab Poke": {
+    "result": "Crab Poke",
+    "emoji": "🦀🍢",
+    "isNew": false
+  },
   "Crabstick": {
     "result": "Crabstick",
     "emoji": "🦀",
@@ -1337,6 +1637,21 @@
   "Crabzilla": {
     "result": "Crabzilla",
     "emoji": "🦀",
+    "isNew": false
+  },
+  "Crash": {
+    "result": "Crash",
+    "emoji": "💥",
+    "isNew": false
+  },
+  "Crayon": {
+    "result": "Crayon",
+    "emoji": "🖍️",
+    "isNew": false
+  },
+  "Crime": {
+    "result": "Crime",
+    "emoji": "🔪",
     "isNew": false
   },
   "Crocobra": {
@@ -1372,6 +1687,16 @@
   "Crypto City": {
     "result": "Crypto City",
     "emoji": "🌃",
+    "isNew": false
+  },
+  "CryptoFart": {
+    "result": "CryptoFart",
+    "emoji": "💨",
+    "isNew": false
+  },
+  "CryptoKitties": {
+    "result": "CryptoKitties",
+    "emoji": "🐱",
     "isNew": false
   },
   "Cryptobot": {
@@ -1424,9 +1749,19 @@
     "emoji": "🇨🇺",
     "isNew": false
   },
+  "Cuban Missile Crisis": {
+    "result": "Cuban Missile Crisis",
+    "emoji": "🇨🇺",
+    "isNew": false
+  },
   "Cupid": {
     "result": "Cupid",
     "emoji": "💘",
+    "isNew": false
+  },
+  "Cure": {
+    "result": "Cure",
+    "emoji": "💊",
     "isNew": false
   },
   "Custody": {
@@ -1439,9 +1774,24 @@
     "emoji": "🤖",
     "isNew": false
   },
+  "Cyborg": {
+    "result": "Cyborg",
+    "emoji": "🤖",
+    "isNew": false
+  },
   "Cyclone": {
     "result": "Cyclone",
     "emoji": "🌀",
+    "isNew": false
+  },
+  "Cygnus": {
+    "result": "Cygnus",
+    "emoji": "🌌",
+    "isNew": false
+  },
+  "Daffy": {
+    "result": "Daffy",
+    "emoji": "🦆",
     "isNew": false
   },
   "Dagobah": {
@@ -1469,6 +1819,11 @@
     "emoji": "🌚",
     "isNew": false
   },
+  "Dark Bonsai": {
+    "result": "Dark Bonsai",
+    "emoji": "🌲",
+    "isNew": false
+  },
   "Dark Christianity": {
     "result": "Dark Christianity",
     "emoji": "🕯️",
@@ -1477,6 +1832,11 @@
   "Dark Fishman": {
     "result": "Dark Fishman",
     "emoji": "🐟",
+    "isNew": false
+  },
+  "Dark Justice": {
+    "result": "Dark Justice",
+    "emoji": "🌌",
     "isNew": false
   },
   "Dark Knight": {
@@ -1509,6 +1869,11 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Darth Honey": {
+    "result": "Darth Honey",
+    "emoji": "🍯",
+    "isNew": false
+  },
   "Darth Mallard": {
     "result": "Darth Mallard",
     "emoji": "🦆",
@@ -1522,6 +1887,11 @@
   "Darth Medusa": {
     "result": "Darth Medusa",
     "emoji": "👿",
+    "isNew": false
+  },
+  "Darth Mud": {
+    "result": "Darth Mud",
+    "emoji": "🌌",
     "isNew": false
   },
   "Darth Pinocchio": {
@@ -1579,6 +1949,11 @@
     "emoji": "💉",
     "isNew": false
   },
+  "Diablo": {
+    "result": "Diablo",
+    "emoji": "😈",
+    "isNew": false
+  },
   "Diablob": {
     "result": "Diablob",
     "emoji": "😈",
@@ -1594,9 +1969,19 @@
     "emoji": "🦖",
     "isNew": false
   },
+  "Diablosaurus Rex": {
+    "result": "Diablosaurus Rex",
+    "emoji": "🦖",
+    "isNew": false
+  },
   "Diabloschu": {
     "result": "Diabloschu",
     "emoji": "🦔",
+    "isNew": false
+  },
+  "Dinner": {
+    "result": "Dinner",
+    "emoji": "🍽️",
     "isNew": false
   },
   "Dino Danno": {
@@ -1659,9 +2044,24 @@
     "emoji": "👨‍⚕️",
     "isNew": false
   },
+  "Dog": {
+    "result": "Dog",
+    "emoji": "🐶",
+    "isNew": false
+  },
   "Donald Trump": {
     "result": "Donald Trump",
     "emoji": "💩",
+    "isNew": false
+  },
+  "Donut": {
+    "result": "Donut",
+    "emoji": "🍩",
+    "isNew": false
+  },
+  "Dory": {
+    "result": "Dory",
+    "emoji": "🐠",
     "isNew": false
   },
   "Dracolich": {
@@ -1729,9 +2129,24 @@
     "emoji": "💭",
     "isNew": false
   },
+  "Driftwood": {
+    "result": "Driftwood",
+    "emoji": "🌊",
+    "isNew": false
+  },
+  "Drone": {
+    "result": "Drone",
+    "emoji": "🛩️",
+    "isNew": false
+  },
   "Druid": {
     "result": "Druid",
     "emoji": "🌳",
+    "isNew": false
+  },
+  "Drunk": {
+    "result": "Drunk",
+    "emoji": "🍺",
     "isNew": false
   },
   "Duck": {
@@ -1742,6 +2157,11 @@
   "Duck Cannon": {
     "result": "Duck Cannon",
     "emoji": "🦆🔫",
+    "isNew": false
+  },
+  "Duck Dynasty": {
+    "result": "Duck Dynasty",
+    "emoji": "🦆",
     "isNew": false
   },
   "Duck Emoji": {
@@ -1764,6 +2184,11 @@
     "emoji": "🐕",
     "isNew": false
   },
+  "Duck Pope": {
+    "result": "Duck Pope",
+    "emoji": "🦆",
+    "isNew": false
+  },
   "Duck Sandman": {
     "result": "Duck Sandman",
     "emoji": "🦆🏖️",
@@ -1774,9 +2199,19 @@
     "emoji": "🦆",
     "isNew": false
   },
+  "Duck Sushi": {
+    "result": "Duck Sushi",
+    "emoji": "🍣",
+    "isNew": false
+  },
   "Duck Tape": {
     "result": "Duck Tape",
     "emoji": "📼",
+    "isNew": false
+  },
+  "Duckface": {
+    "result": "Duckface",
+    "emoji": "🦆",
     "isNew": false
   },
   "Duckling": {
@@ -1854,6 +2289,11 @@
     "emoji": "🦖",
     "isNew": false
   },
+  "Dustbin": {
+    "result": "Dustbin",
+    "emoji": "🗑️",
+    "isNew": false
+  },
   "Dustin": {
     "result": "Dustin",
     "emoji": "👦",
@@ -1869,9 +2309,19 @@
     "emoji": "🧨",
     "isNew": false
   },
+  "Earl": {
+    "result": "Earl",
+    "emoji": "👑",
+    "isNew": false
+  },
   "Earth": {
     "result": "Earth",
     "emoji": "🌍",
+    "isNew": false
+  },
+  "Egg": {
+    "result": "Egg",
+    "emoji": "🥚",
     "isNew": false
   },
   "Egypt": {
@@ -1887,6 +2337,11 @@
   "Electricity": {
     "result": "Electricity",
     "emoji": "⚡️",
+    "isNew": false
+  },
+  "Elf": {
+    "result": "Elf",
+    "emoji": "🧝",
     "isNew": false
   },
   "Emo": {
@@ -1974,14 +2429,29 @@
     "emoji": "🐴",
     "isNew": false
   },
+  "Eraser": {
+    "result": "Eraser",
+    "emoji": "🗑️",
+    "isNew": false
+  },
   "Eruption": {
     "result": "Eruption",
     "emoji": "🌋",
     "isNew": false
   },
+  "Escape": {
+    "result": "Escape",
+    "emoji": "🏃",
+    "isNew": false
+  },
   "Eve": {
     "result": "Eve",
     "emoji": "🌙",
+    "isNew": false
+  },
+  "Exodus": {
+    "result": "Exodus",
+    "emoji": "🏜️",
     "isNew": false
   },
   "Experiment": {
@@ -1999,6 +2469,21 @@
     "emoji": "🛢️",
     "isNew": false
   },
+  "Eye": {
+    "result": "Eye",
+    "emoji": "👀",
+    "isNew": false
+  },
+  "Fan": {
+    "result": "Fan",
+    "emoji": "🌬️",
+    "isNew": false
+  },
+  "Farm": {
+    "result": "Farm",
+    "emoji": "🐄",
+    "isNew": false
+  },
   "Fart": {
     "result": "Fart",
     "emoji": "💨",
@@ -2007,6 +2492,11 @@
   "Fertilizer": {
     "result": "Fertilizer",
     "emoji": "💩",
+    "isNew": false
+  },
+  "Fiction": {
+    "result": "Fiction",
+    "emoji": "📚",
     "isNew": false
   },
   "Fidel": {
@@ -2089,6 +2579,16 @@
     "emoji": "🐟",
     "isNew": false
   },
+  "Fishstick": {
+    "result": "Fishstick",
+    "emoji": "🐟",
+    "isNew": false
+  },
+  "Five-O": {
+    "result": "Five-O",
+    "emoji": "👮",
+    "isNew": false
+  },
   "Flat": {
     "result": "Flat",
     "emoji": "🌄",
@@ -2112,6 +2612,11 @@
   "Flight": {
     "result": "Flight",
     "emoji": "✈️",
+    "isNew": false
+  },
+  "Flood": {
+    "result": "Flood",
+    "emoji": "🌊",
     "isNew": false
   },
   "Flounder": {
@@ -2144,6 +2649,11 @@
     "emoji": "📯",
     "isNew": false
   },
+  "Foghorn Leghorn": {
+    "result": "Foghorn Leghorn",
+    "emoji": "🐓",
+    "isNew": false
+  },
   "Formal": {
     "result": "Formal",
     "emoji": "👔",
@@ -2159,6 +2669,16 @@
     "emoji": "🧟",
     "isNew": false
   },
+  "Frappe": {
+    "result": "Frappe",
+    "emoji": "🧋",
+    "isNew": false
+  },
+  "Friend": {
+    "result": "Friend",
+    "emoji": "👯",
+    "isNew": false
+  },
   "Friendship": {
     "result": "Friendship",
     "emoji": "👯",
@@ -2172,6 +2692,11 @@
   "Frogcicle": {
     "result": "Frogcicle",
     "emoji": "🐸",
+    "isNew": false
+  },
+  "Frogfish": {
+    "result": "Frogfish",
+    "emoji": "🐡",
     "isNew": false
   },
   "Frost": {
@@ -2214,6 +2739,11 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Garbage": {
+    "result": "Garbage",
+    "emoji": "🗑️",
+    "isNew": false
+  },
   "Gas": {
     "result": "Gas",
     "emoji": "⛽",
@@ -2239,6 +2769,11 @@
     "emoji": "🌋",
     "isNew": false
   },
+  "Gigantor": {
+    "result": "Gigantor",
+    "emoji": "👾",
+    "isNew": false
+  },
   "Gingerbread": {
     "result": "Gingerbread",
     "emoji": "🍪",
@@ -2252,6 +2787,11 @@
   "Glass": {
     "result": "Glass",
     "emoji": "🥃",
+    "isNew": false
+  },
+  "Glasses": {
+    "result": "Glasses",
+    "emoji": "👓",
     "isNew": false
   },
   "Global Warming": {
@@ -2279,6 +2819,16 @@
     "emoji": "🦖",
     "isNew": false
   },
+  "Gold": {
+    "result": "Gold",
+    "emoji": "💛",
+    "isNew": false
+  },
+  "Gold Medal": {
+    "result": "Gold Medal",
+    "emoji": "🥇",
+    "isNew": false
+  },
   "Goldfish": {
     "result": "Goldfish",
     "emoji": "🐠",
@@ -2292,6 +2842,11 @@
   "Goliath": {
     "result": "Goliath",
     "emoji": "🐘",
+    "isNew": false
+  },
+  "Gondola": {
+    "result": "Gondola",
+    "emoji": "🛶",
     "isNew": false
   },
   "Goose": {
@@ -2344,9 +2899,24 @@
     "emoji": "🖤",
     "isNew": false
   },
+  "Gothic Lolita": {
+    "result": "Gothic Lolita",
+    "emoji": "👗",
+    "isNew": false
+  },
+  "Gothicorn": {
+    "result": "Gothicorn",
+    "emoji": "🦇",
+    "isNew": false
+  },
   "Gothstorm": {
     "result": "Gothstorm",
     "emoji": "🌩️",
+    "isNew": false
+  },
+  "Greenhouse": {
+    "result": "Greenhouse",
+    "emoji": "🏡",
     "isNew": false
   },
   "Grim Reaper": {
@@ -2364,9 +2934,19 @@
     "emoji": "🔫",
     "isNew": false
   },
+  "Gull": {
+    "result": "Gull",
+    "emoji": "🐦",
+    "isNew": false
+  },
   "Hack": {
     "result": "Hack",
     "emoji": "🔨",
+    "isNew": false
+  },
+  "Hackchain": {
+    "result": "Hackchain",
+    "emoji": "💻",
     "isNew": false
   },
   "Hackcoin": {
@@ -2384,6 +2964,11 @@
     "emoji": "🤖💻",
     "isNew": false
   },
+  "Hackers": {
+    "result": "Hackers",
+    "emoji": "💻👨‍💻",
+    "isNew": false
+  },
   "Hackgod": {
     "result": "Hackgod",
     "emoji": "💻",
@@ -2394,14 +2979,39 @@
     "emoji": "💻",
     "isNew": false
   },
+  "Hackmonk": {
+    "result": "Hackmonk",
+    "emoji": "🐛",
+    "isNew": false
+  },
   "Hacktivist": {
     "result": "Hacktivist",
     "emoji": "💻🔓👨‍",
     "isNew": false
   },
+  "Hail": {
+    "result": "Hail",
+    "emoji": "❄️",
+    "isNew": false
+  },
+  "Ham": {
+    "result": "Ham",
+    "emoji": "🍖",
+    "isNew": false
+  },
   "Han": {
     "result": "Han",
     "emoji": "🚀",
+    "isNew": false
+  },
+  "Han Solo": {
+    "result": "Han Solo",
+    "emoji": "👨‍🚀",
+    "isNew": false
+  },
+  "Hang Yoda": {
+    "result": "Hang Yoda",
+    "emoji": "💚",
     "isNew": false
   },
   "Hangover": {
@@ -2444,6 +3054,11 @@
     "emoji": "🌾",
     "isNew": false
   },
+  "Hay Skimming": {
+    "result": "Hay Skimming",
+    "emoji": "🚜🌾",
+    "isNew": false
+  },
   "Headache": {
     "result": "Headache",
     "emoji": "🤕",
@@ -2459,6 +3074,16 @@
     "emoji": "🦔",
     "isNew": false
   },
+  "Heist": {
+    "result": "Heist",
+    "emoji": "💸",
+    "isNew": false
+  },
+  "Helen": {
+    "result": "Helen",
+    "emoji": "👩‍🦰",
+    "isNew": false
+  },
   "Hemingway": {
     "result": "Hemingway",
     "emoji": "🐟",
@@ -2467,6 +3092,11 @@
   "Hermit": {
     "result": "Hermit",
     "emoji": "🐢",
+    "isNew": false
+  },
+  "Higgs Boson": {
+    "result": "Higgs Boson",
+    "emoji": "👽",
     "isNew": false
   },
   "Hijack": {
@@ -2484,9 +3114,19 @@
     "emoji": "🐝",
     "isNew": false
   },
+  "Hole": {
+    "result": "Hole",
+    "emoji": "🕳️",
+    "isNew": false
+  },
   "Home": {
     "result": "Home",
     "emoji": "🏠",
+    "isNew": false
+  },
+  "Homer Simpson": {
+    "result": "Homer Simpson",
+    "emoji": "🍩",
     "isNew": false
   },
   "Honest Abe": {
@@ -2504,6 +3144,11 @@
     "emoji": "🍹",
     "isNew": false
   },
+  "Honey Diabetes": {
+    "result": "Honey Diabetes",
+    "emoji": "🍯",
+    "isNew": false
+  },
   "Honey Divorce": {
     "result": "Honey Divorce",
     "emoji": "🍯",
@@ -2519,6 +3164,11 @@
     "emoji": "🍯",
     "isNew": false
   },
+  "Honey Moon": {
+    "result": "Honey Moon",
+    "emoji": "🌝",
+    "isNew": false
+  },
   "Honey Phoenix": {
     "result": "Honey Phoenix",
     "emoji": "🐝",
@@ -2532,6 +3182,11 @@
   "Honeycomb": {
     "result": "Honeycomb",
     "emoji": "🍯",
+    "isNew": false
+  },
+  "Honeymooda": {
+    "result": "Honeymooda",
+    "emoji": "💑",
     "isNew": false
   },
   "Honeymoon": {
@@ -2562,6 +3217,11 @@
   "Hoth": {
     "result": "Hoth",
     "emoji": "❄️",
+    "isNew": false
+  },
+  "Hothatlas": {
+    "result": "Hothatlas",
+    "emoji": "❄️🗻",
     "isNew": false
   },
   "Hourglass": {
@@ -2684,6 +3344,11 @@
     "emoji": "🍦🧜‍♂",
     "isNew": false
   },
+  "Igloo": {
+    "result": "Igloo",
+    "emoji": "⛄️",
+    "isNew": false
+  },
   "Incense": {
     "result": "Incense",
     "emoji": "🕯️",
@@ -2704,9 +3369,34 @@
     "emoji": "🔨",
     "isNew": false
   },
+  "Iron Samurai": {
+    "result": "Iron Samurai",
+    "emoji": "🤺",
+    "isNew": false
+  },
+  "Iron Throne": {
+    "result": "Iron Throne",
+    "emoji": "👑",
+    "isNew": false
+  },
+  "Iron Wing": {
+    "result": "Iron Wing",
+    "emoji": "🦅",
+    "isNew": false
+  },
   "Ironasaurus Rex": {
     "result": "Ironasaurus Rex",
     "emoji": "🦖",
+    "isNew": false
+  },
+  "Ironman": {
+    "result": "Ironman",
+    "emoji": "💥",
+    "isNew": false
+  },
+  "Irony": {
+    "result": "Irony",
+    "emoji": "😒",
     "isNew": false
   },
   "Island": {
@@ -2716,6 +3406,11 @@
   },
   "Jabba": {
     "result": "Jabba",
+    "emoji": "🐸",
+    "isNew": false
+  },
+  "Jabba the Hutt": {
+    "result": "Jabba the Hutt",
     "emoji": "🐸",
     "isNew": false
   },
@@ -2734,6 +3429,11 @@
     "emoji": "💣",
     "isNew": false
   },
+  "Jack Hydra Lord": {
+    "result": "Jack Hydra Lord",
+    "emoji": "🃏",
+    "isNew": false
+  },
   "Jack Lord": {
     "result": "Jack Lord",
     "emoji": "🕵️",
@@ -2744,9 +3444,19 @@
     "emoji": "☠️",
     "isNew": false
   },
+  "Jafar": {
+    "result": "Jafar",
+    "emoji": "🐍",
+    "isNew": false
+  },
   "Jail": {
     "result": "Jail",
     "emoji": "🚨",
+    "isNew": false
+  },
+  "Jailbreak": {
+    "result": "Jailbreak",
+    "emoji": "🔓",
     "isNew": false
   },
   "James Bond": {
@@ -2762,6 +3472,11 @@
   "Japan": {
     "result": "Japan",
     "emoji": "🗾",
+    "isNew": false
+  },
+  "Jareth": {
+    "result": "Jareth",
+    "emoji": "👑",
     "isNew": false
   },
   "Jedi": {
@@ -2874,9 +3589,29 @@
     "emoji": "🦖",
     "isNew": false
   },
+  "Jury": {
+    "result": "Jury",
+    "emoji": "🙋",
+    "isNew": false
+  },
+  "Justice": {
+    "result": "Justice",
+    "emoji": "⚖️",
+    "isNew": false
+  },
   "Kaiju": {
     "result": "Kaiju",
     "emoji": "🐉",
+    "isNew": false
+  },
+  "Karate Kid": {
+    "result": "Karate Kid",
+    "emoji": "🥋",
+    "isNew": false
+  },
+  "Karate Snowcone": {
+    "result": "Karate Snowcone",
+    "emoji": "🥋❄️",
     "isNew": false
   },
   "Karma": {
@@ -2897,6 +3632,16 @@
   "Kelp": {
     "result": "Kelp",
     "emoji": "🌿",
+    "isNew": false
+  },
+  "Kermit": {
+    "result": "Kermit",
+    "emoji": "🐸",
+    "isNew": false
+  },
+  "King": {
+    "result": "King",
+    "emoji": "👑",
     "isNew": false
   },
   "King Tut": {
@@ -2929,6 +3674,11 @@
     "emoji": "🧪",
     "isNew": false
   },
+  "Labyrinth": {
+    "result": "Labyrinth",
+    "emoji": "🔀",
+    "isNew": false
+  },
   "Lake": {
     "result": "Lake",
     "emoji": "🌊",
@@ -2939,9 +3689,19 @@
     "emoji": "💡",
     "isNew": false
   },
+  "Land Cruiser": {
+    "result": "Land Cruiser",
+    "emoji": "🚙",
+    "isNew": false
+  },
   "Lava": {
     "result": "Lava",
     "emoji": "🌋",
+    "isNew": false
+  },
+  "Lava Lamp": {
+    "result": "Lava Lamp",
+    "emoji": "💡",
     "isNew": false
   },
   "Lawyer": {
@@ -2984,9 +3744,19 @@
     "emoji": "🍋",
     "isNew": false
   },
+  "Lenin": {
+    "result": "Lenin",
+    "emoji": "🇷🇺",
+    "isNew": false
+  },
   "Leviathan": {
     "result": "Leviathan",
     "emoji": "🐋",
+    "isNew": false
+  },
+  "Liberty": {
+    "result": "Liberty",
+    "emoji": "🗽",
     "isNew": false
   },
   "Library": {
@@ -3019,6 +3789,11 @@
     "emoji": "🏛️",
     "isNew": false
   },
+  "Lipstick": {
+    "result": "Lipstick",
+    "emoji": "💄",
+    "isNew": false
+  },
   "Lizard": {
     "result": "Lizard",
     "emoji": "🦎",
@@ -3037,6 +3812,11 @@
   "Log": {
     "result": "Log",
     "emoji": "🪵",
+    "isNew": false
+  },
+  "Lollipop": {
+    "result": "Lollipop",
+    "emoji": "🍭",
     "isNew": false
   },
   "Lolly": {
@@ -3062,6 +3842,11 @@
   "Love Boat": {
     "result": "Love Boat",
     "emoji": "🛳️",
+    "isNew": false
+  },
+  "Lovebirds": {
+    "result": "Lovebirds",
+    "emoji": "💑",
     "isNew": false
   },
   "Lovecraft": {
@@ -3094,6 +3879,16 @@
     "emoji": "💻",
     "isNew": false
   },
+  "MacGyver": {
+    "result": "MacGyver",
+    "emoji": "🔧",
+    "isNew": false
+  },
+  "Macbook": {
+    "result": "Macbook",
+    "emoji": "💻",
+    "isNew": false
+  },
   "Macbook Air": {
     "result": "Macbook Air",
     "emoji": "💻",
@@ -3104,14 +3899,39 @@
     "emoji": "💻",
     "isNew": false
   },
+  "Macintosh": {
+    "result": "Macintosh",
+    "emoji": "🍏",
+    "isNew": false
+  },
   "Magma": {
     "result": "Magma",
     "emoji": "🌋",
     "isNew": false
   },
+  "Magnet": {
+    "result": "Magnet",
+    "emoji": "🧲",
+    "isNew": false
+  },
   "Major Tom": {
     "result": "Major Tom",
     "emoji": "🌌",
+    "isNew": false
+  },
+  "Mammoth": {
+    "result": "Mammoth",
+    "emoji": "🦣",
+    "isNew": false
+  },
+  "Mammoth WVH": {
+    "result": "Mammoth WVH",
+    "emoji": "🎸",
+    "isNew": false
+  },
+  "Map": {
+    "result": "Map",
+    "emoji": "🗺️",
     "isNew": false
   },
   "Marriage": {
@@ -3124,6 +3944,11 @@
     "emoji": "🪐",
     "isNew": false
   },
+  "Martian": {
+    "result": "Martian",
+    "emoji": "👽",
+    "isNew": false
+  },
   "Mask": {
     "result": "Mask",
     "emoji": "😷",
@@ -3132,6 +3957,16 @@
   "Matter": {
     "result": "Matter",
     "emoji": "💧",
+    "isNew": false
+  },
+  "Mead": {
+    "result": "Mead",
+    "emoji": "🍯",
+    "isNew": false
+  },
+  "Medicine": {
+    "result": "Medicine",
+    "emoji": "💊",
     "isNew": false
   },
   "Medusa": {
@@ -3189,6 +4024,21 @@
     "emoji": "🏙️",
     "isNew": false
   },
+  "Mewthree": {
+    "result": "Mewthree",
+    "emoji": "🐱‍👤",
+    "isNew": false
+  },
+  "Mewtwo": {
+    "result": "Mewtwo",
+    "emoji": "👾",
+    "isNew": false
+  },
+  "Michael Jordan": {
+    "result": "Michael Jordan",
+    "emoji": "🏀",
+    "isNew": false
+  },
   "Microsoft": {
     "result": "Microsoft",
     "emoji": "💻",
@@ -3197,6 +4047,21 @@
   "Milkshake": {
     "result": "Milkshake",
     "emoji": "🥤",
+    "isNew": false
+  },
+  "Milky Way": {
+    "result": "Milky Way",
+    "emoji": "🌌",
+    "isNew": false
+  },
+  "Millennium Falcon": {
+    "result": "Millennium Falcon",
+    "emoji": "🛸",
+    "isNew": false
+  },
+  "Minotaur": {
+    "result": "Minotaur",
+    "emoji": "🐃",
     "isNew": false
   },
   "Mirage": {
@@ -3222,6 +4087,11 @@
   "Mistletoe": {
     "result": "Mistletoe",
     "emoji": "🎄",
+    "isNew": false
+  },
+  "Moai": {
+    "result": "Moai",
+    "emoji": "🗿",
     "isNew": false
   },
   "Mojito": {
@@ -3254,6 +4124,11 @@
     "emoji": "👾",
     "isNew": false
   },
+  "Monty Python": {
+    "result": "Monty Python",
+    "emoji": "🐍",
+    "isNew": false
+  },
   "Moon": {
     "result": "Moon",
     "emoji": "🌙",
@@ -3269,9 +4144,29 @@
     "emoji": "🥮",
     "isNew": false
   },
+  "Moonraker": {
+    "result": "Moonraker",
+    "emoji": "🌕",
+    "isNew": false
+  },
+  "Moses": {
+    "result": "Moses",
+    "emoji": "🐫",
+    "isNew": false
+  },
   "Mountain": {
     "result": "Mountain",
     "emoji": "🏔️",
+    "isNew": false
+  },
+  "Mousetrap": {
+    "result": "Mousetrap",
+    "emoji": "🐭",
+    "isNew": false
+  },
+  "Mr. Miyagi": {
+    "result": "Mr. Miyagi",
+    "emoji": "🥋",
     "isNew": false
   },
   "Mud": {
@@ -3314,6 +4209,11 @@
     "emoji": "🐛",
     "isNew": false
   },
+  "Muddy Golem": {
+    "result": "Muddy Golem",
+    "emoji": "👹",
+    "isNew": false
+  },
   "Muddy Santa": {
     "result": "Muddy Santa",
     "emoji": "🎅",
@@ -3322,6 +4222,11 @@
   "Muddy Snow-rex": {
     "result": "Muddy Snow-rex",
     "emoji": "❄️🦖",
+    "isNew": false
+  },
+  "Mudhulk": {
+    "result": "Mudhulk",
+    "emoji": "💩",
     "isNew": false
   },
   "Mudkip": {
@@ -3364,9 +4269,19 @@
     "emoji": "🌪️",
     "isNew": false
   },
+  "Mudshake": {
+    "result": "Mudshake",
+    "emoji": "🍹",
+    "isNew": false
+  },
   "Mudskipper": {
     "result": "Mudskipper",
     "emoji": "🐠",
+    "isNew": false
+  },
+  "Mudslide": {
+    "result": "Mudslide",
+    "emoji": "🌋",
     "isNew": false
   },
   "Mudwich": {
@@ -3389,6 +4304,21 @@
     "emoji": "🧟",
     "isNew": false
   },
+  "Muppet": {
+    "result": "Muppet",
+    "emoji": "🐸",
+    "isNew": false
+  },
+  "Mushroom": {
+    "result": "Mushroom",
+    "emoji": "🍄",
+    "isNew": false
+  },
+  "Music": {
+    "result": "Music",
+    "emoji": "🎶",
+    "isNew": false
+  },
   "Mutant": {
     "result": "Mutant",
     "emoji": "🦖",
@@ -3409,9 +4339,19 @@
     "emoji": "🦄",
     "isNew": false
   },
+  "Navy": {
+    "result": "Navy",
+    "emoji": "🚢",
+    "isNew": false
+  },
   "Nectar": {
     "result": "Nectar",
     "emoji": "🍯",
+    "isNew": false
+  },
+  "Needle": {
+    "result": "Needle",
+    "emoji": "💉",
     "isNew": false
   },
   "Nemo": {
@@ -3539,6 +4479,11 @@
     "emoji": "🏆",
     "isNew": false
   },
+  "Nobel Prize": {
+    "result": "Nobel Prize",
+    "emoji": "🏆",
+    "isNew": false
+  },
   "Nuclear": {
     "result": "Nuclear",
     "emoji": "☢️",
@@ -3561,6 +4506,11 @@
   },
   "Obama": {
     "result": "Obama",
+    "emoji": "🐻",
+    "isNew": false
+  },
+  "Obamami": {
+    "result": "Obamami",
     "emoji": "🐻",
     "isNew": false
   },
@@ -3599,6 +4549,11 @@
     "emoji": "🛢️",
     "isNew": false
   },
+  "Oil Rig": {
+    "result": "Oil Rig",
+    "emoji": "🛢️",
+    "isNew": false
+  },
   "Oil Spill": {
     "result": "Oil Spill",
     "emoji": "💦",
@@ -3614,6 +4569,16 @@
     "emoji": "💦",
     "isNew": false
   },
+  "Omelette": {
+    "result": "Omelette",
+    "emoji": "🍳",
+    "isNew": false
+  },
+  "One Piece": {
+    "result": "One Piece",
+    "emoji": "🏴‍☠️",
+    "isNew": false
+  },
   "Optimus Prime": {
     "result": "Optimus Prime",
     "emoji": "🚚",
@@ -3624,6 +4589,16 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Orchestra": {
+    "result": "Orchestra",
+    "emoji": "🎻",
+    "isNew": false
+  },
+  "Origami": {
+    "result": "Origami",
+    "emoji": "🎌",
+    "isNew": false
+  },
   "Osama": {
     "result": "Osama",
     "emoji": "💣",
@@ -3632,6 +4607,16 @@
   "POW": {
     "result": "POW",
     "emoji": "💥",
+    "isNew": false
+  },
+  "Painting": {
+    "result": "Painting",
+    "emoji": "🎨",
+    "isNew": false
+  },
+  "Paladin": {
+    "result": "Paladin",
+    "emoji": "🛡️",
     "isNew": false
   },
   "Palm": {
@@ -3659,6 +4644,16 @@
     "emoji": "🌴",
     "isNew": false
   },
+  "Palmosaurus": {
+    "result": "Palmosaurus",
+    "emoji": "🦖",
+    "isNew": false
+  },
+  "Palmrose": {
+    "result": "Palmrose",
+    "emoji": "🌴",
+    "isNew": false
+  },
   "Pancake": {
     "result": "Pancake",
     "emoji": "🥞",
@@ -3669,9 +4664,24 @@
     "emoji": "📃",
     "isNew": false
   },
+  "Paper Tardis": {
+    "result": "Paper Tardis",
+    "emoji": "📜",
+    "isNew": false
+  },
   "Paradise": {
     "result": "Paradise",
     "emoji": "🏝️",
+    "isNew": false
+  },
+  "Parting": {
+    "result": "Parting",
+    "emoji": "👋",
+    "isNew": false
+  },
+  "Passion": {
+    "result": "Passion",
+    "emoji": "💓",
     "isNew": false
   },
   "Pegasaurus Rex": {
@@ -3694,6 +4704,11 @@
     "emoji": "🐧",
     "isNew": false
   },
+  "Penguinzilla": {
+    "result": "Penguinzilla",
+    "emoji": "🐧",
+    "isNew": false
+  },
   "Perfume": {
     "result": "Perfume",
     "emoji": "👃",
@@ -3709,8 +4724,18 @@
     "emoji": "🔥",
     "isNew": false
   },
+  "Picasso": {
+    "result": "Picasso",
+    "emoji": "🎨",
+    "isNew": false
+  },
   "Pig": {
     "result": "Pig",
+    "emoji": "🐷",
+    "isNew": false
+  },
+  "Pig on a Spit": {
+    "result": "Pig on a Spit",
     "emoji": "🐷",
     "isNew": false
   },
@@ -3739,6 +4764,11 @@
     "emoji": "🐷👸🏻",
     "isNew": false
   },
+  "Pigsty": {
+    "result": "Pigsty",
+    "emoji": "🐖",
+    "isNew": false
+  },
   "Pikachu": {
     "result": "Pikachu",
     "emoji": "⚡️",
@@ -3756,6 +4786,11 @@
   },
   "Pineapple": {
     "result": "Pineapple",
+    "emoji": "🍍",
+    "isNew": false
+  },
+  "Pineapple King": {
+    "result": "Pineapple King",
     "emoji": "🍍",
     "isNew": false
   },
@@ -3792,6 +4827,11 @@
   "Pirate Ship": {
     "result": "Pirate Ship",
     "emoji": "🏴‍☠️",
+    "isNew": false
+  },
+  "Pirate Unicorn": {
+    "result": "Pirate Unicorn",
+    "emoji": "🦄",
     "isNew": false
   },
   "Pirate-rex": {
@@ -3864,6 +4904,11 @@
     "emoji": "🍄",
     "isNew": false
   },
+  "Pokeball": {
+    "result": "Pokeball",
+    "emoji": "🎱",
+    "isNew": false
+  },
   "Poked Gothstorm": {
     "result": "Poked Gothstorm",
     "emoji": "👉🏻👈",
@@ -3878,6 +4923,11 @@
     "result": "Poked Vase",
     "emoji": "🏺",
     "isNew": true
+  },
+  "Pokemon": {
+    "result": "Pokemon",
+    "emoji": "🐉",
+    "isNew": false
   },
   "Pollen": {
     "result": "Pollen",
@@ -3904,6 +4954,11 @@
     "emoji": "🐴",
     "isNew": false
   },
+  "Ponyo": {
+    "result": "Ponyo",
+    "emoji": "🐟",
+    "isNew": false
+  },
   "Pooh Bear": {
     "result": "Pooh Bear",
     "emoji": "🐻",
@@ -3918,6 +4973,11 @@
     "result": "Pooh-corn Dracula",
     "emoji": "🧛‍♂️",
     "isNew": true
+  },
+  "Poop": {
+    "result": "Poop",
+    "emoji": "💩",
+    "isNew": false
   },
   "Popchain": {
     "result": "Popchain",
@@ -3949,9 +5009,29 @@
     "emoji": "🐷",
     "isNew": false
   },
+  "Pork Chop": {
+    "result": "Pork Chop",
+    "emoji": "🥓",
+    "isNew": false
+  },
+  "Porkfish": {
+    "result": "Porkfish",
+    "emoji": "🐟",
+    "isNew": false
+  },
+  "Porkins": {
+    "result": "Porkins",
+    "emoji": "🐷",
+    "isNew": false
+  },
   "Porky": {
     "result": "Porky",
     "emoji": "🐷",
+    "isNew": false
+  },
+  "Porky Pies": {
+    "result": "Porky Pies",
+    "emoji": "🐷🥧",
     "isNew": false
   },
   "Porky-rex": {
@@ -3977,6 +5057,11 @@
   "Powder": {
     "result": "Powder",
     "emoji": "🌨️",
+    "isNew": false
+  },
+  "President": {
+    "result": "President",
+    "emoji": "🇺🇸",
     "isNew": false
   },
   "Prick": {
@@ -4074,6 +5159,11 @@
     "emoji": "👮",
     "isNew": false
   },
+  "Prius": {
+    "result": "Prius",
+    "emoji": "🚙",
+    "isNew": false
+  },
   "Prom": {
     "result": "Prom",
     "emoji": "👗",
@@ -4109,6 +5199,11 @@
     "emoji": "💦",
     "isNew": false
   },
+  "Pulled Pork": {
+    "result": "Pulled Pork",
+    "emoji": "🐷",
+    "isNew": false
+  },
   "Pulp": {
     "result": "Pulp",
     "emoji": "🍊",
@@ -4122,6 +5217,21 @@
   "Pyramid": {
     "result": "Pyramid",
     "emoji": "🗿",
+    "isNew": false
+  },
+  "Quack": {
+    "result": "Quack",
+    "emoji": "🦆",
+    "isNew": false
+  },
+  "Queen": {
+    "result": "Queen",
+    "emoji": "👑",
+    "isNew": false
+  },
+  "Race Car": {
+    "result": "Race Car",
+    "emoji": "🏎️",
     "isNew": false
   },
   "Radiation": {
@@ -4179,6 +5289,11 @@
     "emoji": "🧜‍♀️",
     "isNew": false
   },
+  "Rainbow Monster": {
+    "result": "Rainbow Monster",
+    "emoji": "🌈",
+    "isNew": false
+  },
   "Rainbow Ninjabread Hermit": {
     "result": "Rainbow Ninjabread Hermit",
     "emoji": "🌈🥷🍞",
@@ -4219,6 +5334,31 @@
     "emoji": "🥛",
     "isNew": false
   },
+  "Rat": {
+    "result": "Rat",
+    "emoji": "🐀",
+    "isNew": false
+  },
+  "Rattlesnake": {
+    "result": "Rattlesnake",
+    "emoji": "🐍",
+    "isNew": false
+  },
+  "Real Boy": {
+    "result": "Real Boy",
+    "emoji": "👦",
+    "isNew": false
+  },
+  "Recall": {
+    "result": "Recall",
+    "emoji": "🚨",
+    "isNew": false
+  },
+  "Reddit": {
+    "result": "Reddit",
+    "emoji": "👾",
+    "isNew": false
+  },
   "Reef": {
     "result": "Reef",
     "emoji": "🐠",
@@ -4232,6 +5372,11 @@
   "Research": {
     "result": "Research",
     "emoji": "🔬",
+    "isNew": false
+  },
+  "Resin": {
+    "result": "Resin",
+    "emoji": "🍯",
     "isNew": false
   },
   "Rich": {
@@ -4264,6 +5409,11 @@
     "emoji": "💵",
     "isNew": false
   },
+  "Robin": {
+    "result": "Robin",
+    "emoji": "🦇",
+    "isNew": false
+  },
   "Robin Hood": {
     "result": "Robin Hood",
     "emoji": "🏹",
@@ -4282,6 +5432,11 @@
   "Rocket": {
     "result": "Rocket",
     "emoji": "🚀",
+    "isNew": false
+  },
+  "Rocking Horse": {
+    "result": "Rocking Horse",
+    "emoji": "🐎",
     "isNew": false
   },
   "Rocky Road": {
@@ -4334,8 +5489,18 @@
     "emoji": "🌵",
     "isNew": false
   },
+  "Sailor": {
+    "result": "Sailor",
+    "emoji": "⛵️",
+    "isNew": false
+  },
   "Sake": {
     "result": "Sake",
+    "emoji": "🍶",
+    "isNew": false
+  },
+  "Sake Bomb": {
+    "result": "Sake Bomb",
     "emoji": "🍶",
     "isNew": false
   },
@@ -4352,6 +5517,11 @@
   "Samurai": {
     "result": "Samurai",
     "emoji": "🥷",
+    "isNew": false
+  },
+  "Samus": {
+    "result": "Samus",
+    "emoji": "👩‍🚀",
     "isNew": false
   },
   "Sand": {
@@ -4419,6 +5589,16 @@
     "emoji": "🏖️",
     "isNew": false
   },
+  "Sandy Claus": {
+    "result": "Sandy Claus",
+    "emoji": "🎅",
+    "isNew": false
+  },
+  "Sandy Hook": {
+    "result": "Sandy Hook",
+    "emoji": "🌊",
+    "isNew": false
+  },
   "Sandy Yoda": {
     "result": "Sandy Yoda",
     "emoji": "🏜️👽",
@@ -4464,6 +5644,11 @@
     "emoji": "🛰️",
     "isNew": false
   },
+  "Saturday": {
+    "result": "Saturday",
+    "emoji": "📅",
+    "isNew": false
+  },
   "Saturn": {
     "result": "Saturn",
     "emoji": "🪐",
@@ -4472,6 +5657,11 @@
   "Scam": {
     "result": "Scam",
     "emoji": "💸",
+    "isNew": false
+  },
+  "Scarecrow": {
+    "result": "Scarecrow",
+    "emoji": "🎃",
     "isNew": false
   },
   "Scent": {
@@ -4494,6 +5684,11 @@
     "emoji": "🔬",
     "isNew": false
   },
+  "Sculpture": {
+    "result": "Sculpture",
+    "emoji": "🗿",
+    "isNew": false
+  },
   "Sea": {
     "result": "Sea",
     "emoji": "🌊",
@@ -4509,6 +5704,11 @@
     "emoji": "🌽",
     "isNew": false
   },
+  "Seal": {
+    "result": "Seal",
+    "emoji": "🦭",
+    "isNew": false
+  },
   "Seaweed": {
     "result": "Seaweed",
     "emoji": "🌊",
@@ -4522,6 +5722,11 @@
   "Server": {
     "result": "Server",
     "emoji": "💻",
+    "isNew": false
+  },
+  "Sesame Street": {
+    "result": "Sesame Street",
+    "emoji": "🍪",
     "isNew": false
   },
   "Shadow": {
@@ -4579,9 +5784,19 @@
     "emoji": "💨",
     "isNew": false
   },
+  "Shocking": {
+    "result": "Shocking",
+    "emoji": "😱",
+    "isNew": false
+  },
   "Shoe": {
     "result": "Shoe",
     "emoji": "👟",
+    "isNew": false
+  },
+  "Singularity": {
+    "result": "Singularity",
+    "emoji": "🌀",
     "isNew": false
   },
   "Sinking": {
@@ -4604,6 +5819,21 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Sithneeze": {
+    "result": "Sithneeze",
+    "emoji": "👃",
+    "isNew": false
+  },
+  "Skimming": {
+    "result": "Skimming",
+    "emoji": "🛥️",
+    "isNew": false
+  },
+  "Skunk": {
+    "result": "Skunk",
+    "emoji": "🦨",
+    "isNew": false
+  },
   "Sleep": {
     "result": "Sleep",
     "emoji": "😴",
@@ -4617,6 +5847,11 @@
   "Slick": {
     "result": "Slick",
     "emoji": "💦",
+    "isNew": false
+  },
+  "Sludge": {
+    "result": "Sludge",
+    "emoji": "💩",
     "isNew": false
   },
   "Smog": {
@@ -4674,6 +5909,11 @@
     "emoji": "🐍",
     "isNew": false
   },
+  "Snake Charmer": {
+    "result": "Snake Charmer",
+    "emoji": "🐍",
+    "isNew": false
+  },
   "Snake-rex": {
     "result": "Snake-rex",
     "emoji": "🐍🦖",
@@ -4714,6 +5954,11 @@
     "emoji": "🤧",
     "isNew": false
   },
+  "Sneezin’": {
+    "result": "Sneezin’",
+    "emoji": "🤧",
+    "isNew": false
+  },
   "Sneezy": {
     "result": "Sneezy",
     "emoji": "🤧",
@@ -4737,6 +5982,16 @@
   "Snot Bong": {
     "result": "Snot Bong",
     "emoji": "👃",
+    "isNew": false
+  },
+  "Snot City": {
+    "result": "Snot City",
+    "emoji": "👃",
+    "isNew": false
+  },
+  "Snot Cookie": {
+    "result": "Snot Cookie",
+    "emoji": "🍪",
     "isNew": false
   },
   "Snot Dracula": {
@@ -4959,6 +6214,11 @@
     "emoji": "🐳",
     "isNew": false
   },
+  "Snotus": {
+    "result": "Snotus",
+    "emoji": "👃",
+    "isNew": false
+  },
   "Snotweed": {
     "result": "Snotweed",
     "emoji": "💩",
@@ -5014,6 +6274,16 @@
     "emoji": "❄️🦖🦄",
     "isNew": false
   },
+  "Snow Pegasus": {
+    "result": "Snow Pegasus",
+    "emoji": "❄️",
+    "isNew": false
+  },
+  "Snow Poseidon": {
+    "result": "Snow Poseidon",
+    "emoji": "⛄️",
+    "isNew": false
+  },
   "Snow Prince": {
     "result": "Snow Prince",
     "emoji": "❄️",
@@ -5024,9 +6294,19 @@
     "emoji": "🦈",
     "isNew": false
   },
+  "Snow Storm": {
+    "result": "Snow Storm",
+    "emoji": "❄️",
+    "isNew": false
+  },
   "Snow Uni-corn": {
     "result": "Snow Uni-corn",
     "emoji": "🦄",
+    "isNew": false
+  },
+  "Snow War": {
+    "result": "Snow War",
+    "emoji": "❄️",
     "isNew": false
   },
   "Snow Whale": {
@@ -5079,6 +6359,11 @@
     "emoji": "❄️",
     "isNew": false
   },
+  "Snowball Fight": {
+    "result": "Snowball Fight",
+    "emoji": "❄️",
+    "isNew": false
+  },
   "Snowbee": {
     "result": "Snowbee",
     "emoji": "❄️",
@@ -5119,6 +6404,16 @@
     "emoji": "❄️",
     "isNew": false
   },
+  "Snowgator": {
+    "result": "Snowgator",
+    "emoji": "🚜",
+    "isNew": false
+  },
+  "Snowglobe": {
+    "result": "Snowglobe",
+    "emoji": "🌨️",
+    "isNew": false
+  },
   "Snowman": {
     "result": "Snowman",
     "emoji": "☃️",
@@ -5149,6 +6444,11 @@
     "emoji": "☃️",
     "isNew": false
   },
+  "Snowtopia": {
+    "result": "Snowtopia",
+    "emoji": "❄️",
+    "isNew": false
+  },
   "Snowtopus": {
     "result": "Snowtopus",
     "emoji": "🐙",
@@ -5159,9 +6459,19 @@
     "emoji": "☃️",
     "isNew": false
   },
+  "Snowzilla": {
+    "result": "Snowzilla",
+    "emoji": "❄️",
+    "isNew": false
+  },
   "Soggy": {
     "result": "Soggy",
     "emoji": "💦",
+    "isNew": false
+  },
+  "Solo": {
+    "result": "Solo",
+    "emoji": "🎸",
     "isNew": false
   },
   "Sonic": {
@@ -5169,14 +6479,29 @@
     "emoji": "🎮",
     "isNew": false
   },
+  "Sonic The Hedgehog": {
+    "result": "Sonic The Hedgehog",
+    "emoji": "🐹",
+    "isNew": false
+  },
   "Sonic the Hedgehog": {
     "result": "Sonic the Hedgehog",
     "emoji": "🐹",
     "isNew": false
   },
+  "Soup": {
+    "result": "Soup",
+    "emoji": "🍲",
+    "isNew": false
+  },
   "Space": {
     "result": "Space",
     "emoji": "🌌",
+    "isNew": false
+  },
+  "Space Buddha": {
+    "result": "Space Buddha",
+    "emoji": "👽",
     "isNew": false
   },
   "Space Flower": {
@@ -5209,9 +6534,19 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Space Piece": {
+    "result": "Space Piece",
+    "emoji": "🌌",
+    "isNew": false
+  },
   "Space Pirate": {
     "result": "Space Pirate",
     "emoji": "🏴‍☠️",
+    "isNew": false
+  },
+  "Space Poseidon": {
+    "result": "Space Poseidon",
+    "emoji": "🌌",
     "isNew": false
   },
   "Space Shark": {
@@ -5224,6 +6559,11 @@
     "emoji": "🚀",
     "isNew": false
   },
+  "Space Shuttle": {
+    "result": "Space Shuttle",
+    "emoji": "🚀",
+    "isNew": false
+  },
   "Space Tree": {
     "result": "Space Tree",
     "emoji": "🌳",
@@ -5232,6 +6572,11 @@
   "Space Yoda": {
     "result": "Space Yoda",
     "emoji": "👽",
+    "isNew": false
+  },
+  "Spaceman": {
+    "result": "Spaceman",
+    "emoji": "👨‍🚀",
     "isNew": false
   },
   "Spaceship": {
@@ -5248,6 +6593,16 @@
     "result": "Spam-mojito",
     "emoji": "🍹",
     "isNew": true
+  },
+  "Speedboat": {
+    "result": "Speedboat",
+    "emoji": "🚤",
+    "isNew": false
+  },
+  "Sperm Whale": {
+    "result": "Sperm Whale",
+    "emoji": "🐋",
+    "isNew": false
   },
   "Sphinx": {
     "result": "Sphinx",
@@ -5269,9 +6624,19 @@
     "emoji": "🦄",
     "isNew": false
   },
+  "SpongeBob": {
+    "result": "SpongeBob",
+    "emoji": "🍍",
+    "isNew": false
+  },
   "SpongeBob SquarePants": {
     "result": "SpongeBob SquarePants",
     "emoji": "🍍",
+    "isNew": false
+  },
+  "SpongeCortana": {
+    "result": "SpongeCortana",
+    "emoji": "💦",
     "isNew": false
   },
   "Spongebob": {
@@ -5294,6 +6659,11 @@
     "emoji": "🦑",
     "isNew": false
   },
+  "Squid Tree": {
+    "result": "Squid Tree",
+    "emoji": "🌳",
+    "isNew": false
+  },
   "Squid-rex": {
     "result": "Squid-rex",
     "emoji": "🦖",
@@ -5304,9 +6674,24 @@
     "emoji": "🦑",
     "isNew": false
   },
+  "Squirtle": {
+    "result": "Squirtle",
+    "emoji": "💦",
+    "isNew": false
+  },
+  "Stake": {
+    "result": "Stake",
+    "emoji": "🪓",
+    "isNew": false
+  },
   "Star": {
     "result": "Star",
     "emoji": "⭐️",
+    "isNew": false
+  },
+  "Star Wars": {
+    "result": "Star Wars",
+    "emoji": "🌌",
     "isNew": false
   },
   "Statue": {
@@ -5334,9 +6719,19 @@
     "emoji": "💨",
     "isNew": false
   },
+  "Steam Engine": {
+    "result": "Steam Engine",
+    "emoji": "🚂",
+    "isNew": false
+  },
   "Steam Pirate": {
     "result": "Steam Pirate",
     "emoji": "🏴‍☠️",
+    "isNew": false
+  },
+  "Steam Punk": {
+    "result": "Steam Punk",
+    "emoji": "💨",
     "isNew": false
   },
   "Steam Train": {
@@ -5352,6 +6747,11 @@
   "Steamboat": {
     "result": "Steamboat",
     "emoji": "🛳️",
+    "isNew": false
+  },
+  "Steampunk": {
+    "result": "Steampunk",
+    "emoji": "🕯️",
     "isNew": false
   },
   "Steampunk Atlantis": {
@@ -5382,6 +6782,16 @@
   "Sting": {
     "result": "Sting",
     "emoji": "🐝",
+    "isNew": false
+  },
+  "Stink": {
+    "result": "Stink",
+    "emoji": "💩",
+    "isNew": false
+  },
+  "Stinky Santa": {
+    "result": "Stinky Santa",
+    "emoji": "🎅💩",
     "isNew": false
   },
   "Stone": {
@@ -5544,6 +6954,11 @@
     "emoji": "🚤",
     "isNew": false
   },
+  "Sumo": {
+    "result": "Sumo",
+    "emoji": "🥋",
+    "isNew": false
+  },
   "Sun": {
     "result": "Sun",
     "emoji": "☀️",
@@ -5589,6 +7004,11 @@
     "emoji": "🦸",
     "isNew": false
   },
+  "Supernova": {
+    "result": "Supernova",
+    "emoji": "🌠",
+    "isNew": false
+  },
   "Surf": {
     "result": "Surf",
     "emoji": "🏄",
@@ -5628,6 +7048,11 @@
     "result": "Surfing Narwhal-rex",
     "emoji": "🏄‍♂️",
     "isNew": true
+  },
+  "Surfing Pikachu": {
+    "result": "Surfing Pikachu",
+    "emoji": "🏄",
+    "isNew": false
   },
   "Surfing Poseidon": {
     "result": "Surfing Poseidon",
@@ -5739,14 +7164,29 @@
     "emoji": "🦢🚬",
     "isNew": false
   },
+  "Swan Venus": {
+    "result": "Swan Venus",
+    "emoji": "🦢",
+    "isNew": false
+  },
   "Swan-rex": {
     "result": "Swan-rex",
     "emoji": "🦢",
     "isNew": false
   },
+  "Swan-yoda": {
+    "result": "Swan-yoda",
+    "emoji": "🦢👴🏻",
+    "isNew": false
+  },
   "Swanosaurus": {
     "result": "Swanosaurus",
     "emoji": "🦖",
+    "isNew": false
+  },
+  "Sweet": {
+    "result": "Sweet",
+    "emoji": "🍬",
     "isNew": false
   },
   "Sweti": {
@@ -5757,6 +7197,21 @@
   "Swetiel": {
     "result": "Swetiel",
     "emoji": "🤔",
+    "isNew": false
+  },
+  "Swetilove": {
+    "result": "Swetilove",
+    "emoji": "💖",
+    "isNew": false
+  },
+  "Swine": {
+    "result": "Swine",
+    "emoji": "🐷",
+    "isNew": false
+  },
+  "Sword": {
+    "result": "Sword",
+    "emoji": "🗡️",
     "isNew": false
   },
   "T-Rex": {
@@ -5779,6 +7234,16 @@
     "emoji": "🍽️",
     "isNew": false
   },
+  "Tail": {
+    "result": "Tail",
+    "emoji": "🐢",
+    "isNew": false
+  },
+  "Tails": {
+    "result": "Tails",
+    "emoji": "🐿️",
+    "isNew": false
+  },
   "Tank": {
     "result": "Tank",
     "emoji": "🛢️",
@@ -5794,6 +7259,11 @@
     "emoji": "🛢️",
     "isNew": false
   },
+  "Tankie": {
+    "result": "Tankie",
+    "emoji": "💣",
+    "isNew": false
+  },
   "Tardis": {
     "result": "Tardis",
     "emoji": "🚗",
@@ -5802,6 +7272,11 @@
   "Technology": {
     "result": "Technology",
     "emoji": "📱",
+    "isNew": false
+  },
+  "Telescope": {
+    "result": "Telescope",
+    "emoji": "🔭",
     "isNew": false
   },
   "Terrorist": {
@@ -5814,6 +7289,11 @@
     "emoji": "🌀",
     "isNew": false
   },
+  "Theseus": {
+    "result": "Theseus",
+    "emoji": "🏹",
+    "isNew": false
+  },
   "Thief": {
     "result": "Thief",
     "emoji": "🕵️",
@@ -5822,6 +7302,11 @@
   "Thorn": {
     "result": "Thorn",
     "emoji": "🌹",
+    "isNew": false
+  },
+  "Thousand Island": {
+    "result": "Thousand Island",
+    "emoji": "🌊",
     "isNew": false
   },
   "Throne": {
@@ -5849,9 +7334,24 @@
     "emoji": "🍹",
     "isNew": false
   },
+  "Tiki Puppet": {
+    "result": "Tiki Puppet",
+    "emoji": "🪅",
+    "isNew": false
+  },
   "Tiki Torch": {
     "result": "Tiki Torch",
     "emoji": "🕯️",
+    "isNew": false
+  },
+  "Tiki-Toki": {
+    "result": "Tiki-Toki",
+    "emoji": "🌴",
+    "isNew": false
+  },
+  "Tiki-toki": {
+    "result": "Tiki-toki",
+    "emoji": "🕛",
     "isNew": false
   },
   "Time": {
@@ -5861,6 +7361,11 @@
   },
   "Time Bandits": {
     "result": "Time Bandits",
+    "emoji": "🕰️",
+    "isNew": false
+  },
+  "Time Lord": {
+    "result": "Time Lord",
     "emoji": "🕰️",
     "isNew": false
   },
@@ -5889,6 +7394,11 @@
     "emoji": "⏰",
     "isNew": false
   },
+  "Time Wave": {
+    "result": "Time Wave",
+    "emoji": "🌊",
+    "isNew": false
+  },
   "Tissue": {
     "result": "Tissue",
     "emoji": "🧻",
@@ -5914,9 +7424,19 @@
     "emoji": "🦕",
     "isNew": false
   },
+  "Toast": {
+    "result": "Toast",
+    "emoji": "🍞",
+    "isNew": false
+  },
   "Tobacco": {
     "result": "Tobacco",
     "emoji": "🚬",
+    "isNew": false
+  },
+  "Tony Stark": {
+    "result": "Tony Stark",
+    "emoji": "💍",
     "isNew": false
   },
   "Tornado": {
@@ -5934,9 +7454,19 @@
     "emoji": "🦖",
     "isNew": false
   },
+  "Tourist": {
+    "result": "Tourist",
+    "emoji": "🏝️",
+    "isNew": false
+  },
   "Town": {
     "result": "Town",
     "emoji": "🏡",
+    "isNew": false
+  },
+  "Toyota": {
+    "result": "Toyota",
+    "emoji": "🚙",
     "isNew": false
   },
   "Tractor": {
@@ -5947,6 +7477,11 @@
   "Tractor Beam": {
     "result": "Tractor Beam",
     "emoji": "🌀",
+    "isNew": false
+  },
+  "Tractor Trailer": {
+    "result": "Tractor Trailer",
+    "emoji": "🚛",
     "isNew": false
   },
   "Train": {
@@ -5967,6 +7502,11 @@
   "Transformers: The Movie": {
     "result": "Transformers: The Movie",
     "emoji": "💥",
+    "isNew": false
+  },
+  "Trash": {
+    "result": "Trash",
+    "emoji": "🗑️",
     "isNew": false
   },
   "Treasure": {
@@ -5999,9 +7539,24 @@
     "emoji": "💸",
     "isNew": false
   },
+  "Triton": {
+    "result": "Triton",
+    "emoji": "🔱",
+    "isNew": false
+  },
   "Trixie": {
     "result": "Trixie",
     "emoji": "🐰",
+    "isNew": false
+  },
+  "Trump": {
+    "result": "Trump",
+    "emoji": "💩",
+    "isNew": false
+  },
+  "Trumpet": {
+    "result": "Trumpet",
+    "emoji": "🎺",
     "isNew": false
   },
   "Tsunami": {
@@ -6012,6 +7567,11 @@
   "Tumbleweed": {
     "result": "Tumbleweed",
     "emoji": "🌵",
+    "isNew": false
+  },
+  "Tumor": {
+    "result": "Tumor",
+    "emoji": "💉",
     "isNew": false
   },
   "Tutankhamun": {
@@ -6044,6 +7604,11 @@
     "emoji": "🌌",
     "isNew": false
   },
+  "Twister": {
+    "result": "Twister",
+    "emoji": "🌪️",
+    "isNew": false
+  },
   "UFO": {
     "result": "UFO",
     "emoji": "🛸",
@@ -6052,6 +7617,11 @@
   "Ugly Duckling": {
     "result": "Ugly Duckling",
     "emoji": "🦆",
+    "isNew": false
+  },
+  "Umbrella": {
+    "result": "Umbrella",
+    "emoji": "☂️",
     "isNew": false
   },
   "Under Pressure": {
@@ -6144,6 +7714,11 @@
     "emoji": "🏖️",
     "isNew": false
   },
+  "Vaccine": {
+    "result": "Vaccine",
+    "emoji": "💉",
+    "isNew": false
+  },
   "Valentine’s Day": {
     "result": "Valentine’s Day",
     "emoji": "💘",
@@ -6162,6 +7737,11 @@
   "Vampire Flower": {
     "result": "Vampire Flower",
     "emoji": "🌹",
+    "isNew": false
+  },
+  "Vampire Mermaid": {
+    "result": "Vampire Mermaid",
+    "emoji": "🧜‍♀️",
     "isNew": false
   },
   "Vampire Narwhal-rex": {
@@ -6184,6 +7764,11 @@
     "emoji": "🕍",
     "isNew": false
   },
+  "Venice": {
+    "result": "Venice",
+    "emoji": "🚤",
+    "isNew": false
+  },
   "Venus": {
     "result": "Venus",
     "emoji": "♀️",
@@ -6192,6 +7777,11 @@
   "Vesuvius": {
     "result": "Vesuvius",
     "emoji": "🌋",
+    "isNew": false
+  },
+  "Viper": {
+    "result": "Viper",
+    "emoji": "🐍",
     "isNew": false
   },
   "Virus": {
@@ -6237,6 +7827,11 @@
   "Water": {
     "result": "Water",
     "emoji": "💧",
+    "isNew": false
+  },
+  "Water Rocket": {
+    "result": "Water Rocket",
+    "emoji": "🚀",
     "isNew": false
   },
   "Wave": {
@@ -6294,6 +7889,11 @@
     "emoji": "🪟",
     "isNew": false
   },
+  "Windows 12": {
+    "result": "Windows 12",
+    "emoji": "💻",
+    "isNew": false
+  },
   "Windows 7": {
     "result": "Windows 7",
     "emoji": "💻",
@@ -6306,6 +7906,16 @@
   },
   "Windows 8.1": {
     "result": "Windows 8.1",
+    "emoji": "💻",
+    "isNew": false
+  },
+  "Windows 95": {
+    "result": "Windows 95",
+    "emoji": "💾",
+    "isNew": false
+  },
+  "Windows Vista": {
+    "result": "Windows Vista",
     "emoji": "💻",
     "isNew": false
   },
@@ -6324,9 +7934,19 @@
     "emoji": "🐻",
     "isNew": false
   },
+  "Wipeout": {
+    "result": "Wipeout",
+    "emoji": "💥",
+    "isNew": false
+  },
   "Wire": {
     "result": "Wire",
     "emoji": "📡",
+    "isNew": false
+  },
+  "Wish": {
+    "result": "Wish",
+    "emoji": "🌠",
     "isNew": false
   },
   "Wolverine": {
@@ -6354,9 +7974,19 @@
     "emoji": "🕳️",
     "isNew": false
   },
+  "Wrapping": {
+    "result": "Wrapping",
+    "emoji": "🎁",
+    "isNew": false
+  },
   "Yawn": {
     "result": "Yawn",
     "emoji": "😴",
+    "isNew": false
+  },
+  "Yellow Submarine": {
+    "result": "Yellow Submarine",
+    "emoji": "🚢",
     "isNew": false
   },
   "Yeti": {
@@ -6374,6 +8004,11 @@
     "emoji": "🧘‍♀️",
     "isNew": false
   },
+  "Zen": {
+    "result": "Zen",
+    "emoji": "🧘‍♀️",
+    "isNew": false
+  },
   "Zeus": {
     "result": "Zeus",
     "emoji": "⚡️",
@@ -6382,6 +8017,16 @@
   "Ziggy Stardust": {
     "result": "Ziggy Stardust",
     "emoji": "👽",
+    "isNew": false
+  },
+  "Zombee": {
+    "result": "Zombee",
+    "emoji": "🐝",
+    "isNew": false
+  },
+  "Zombee-rex": {
+    "result": "Zombee-rex",
+    "emoji": "🦖",
     "isNew": false
   },
   "Zombie": {
@@ -6394,9 +8039,19 @@
     "emoji": "👑",
     "isNew": false
   },
+  "Zombie Plane": {
+    "result": "Zombie Plane",
+    "emoji": "🧟‍♂️",
+    "isNew": false
+  },
   "iMac": {
     "result": "iMac",
     "emoji": "💻",
+    "isNew": false
+  },
+  "iPhone": {
+    "result": "iPhone",
+    "emoji": "📱",
     "isNew": false
   }
 }
