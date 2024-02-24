@@ -20,7 +20,7 @@ enum Command {
     /// Prepare the elements file by copying the "infinite-craft-data" value from localstorage for https://neal.fun/infinite-craft/
     /// and pasting it into a file, then pass that file path to this command.
     /// The file should look something like {"elements": [{"text": "Water", "emoji":"💧", discovered: false }, ...]}
-    MergeExistingNodes {
+    MergeExistingElements {
         #[arg(short, long)]
         elements_file_path: String,
     },
@@ -87,28 +87,28 @@ where
     std::fs::write(file_path, contents).unwrap();
 }
 
-type Nodes = BTreeMap<String, Element>;
+type Elements = BTreeMap<String, Element>;
 type Pairs = BTreeMap<String, Option<String>>;
 
-fn load() -> (Nodes, Pairs) {
-    let nodes: Nodes = read_file_as_json("nodes.json");
+fn load() -> (Elements, Pairs) {
+    let elements: Elements = read_file_as_json("elements.json");
     let pairs: Pairs = read_file_as_json("pairs.json");
-    (nodes, pairs)
+    (elements, pairs)
 }
 
-fn save(nodes: &Nodes, pairs: &Pairs) {
-    write_file_as_json("nodes.json", nodes, true);
+fn save(elements: &Elements, pairs: &Pairs) {
+    write_file_as_json("elements.json", elements, true);
     write_file_as_json("pairs.json", pairs, true);
 }
 
 fn serialize_for_page() {
-    let (nodes, _) = load();
+    let (elements, _) = load();
 
     let elements = SerializedElements {
-        elements: nodes
+        elements: elements
             .values()
             .cloned()
-            .map(|node| SerializedElement::from(node))
+            .map(|element| SerializedElement::from(element))
             .collect::<Vec<_>>(),
     };
     write_file_as_json("serialized_for_page.json", &elements, false);
@@ -148,14 +148,14 @@ async fn get_pair_value(first: &str, second: &str) -> Option<Element> {
 async fn do_combinations() {
     let mut rng = thread_rng();
 
-    let (mut nodes, mut pairs) = load();
+    let (mut elements, mut pairs) = load();
 
     loop {
-        let index_1 = rng.gen_range(0..nodes.len());
-        let index_2 = rng.gen_range(0..nodes.len());
+        let index_1 = rng.gen_range(0..elements.len());
+        let index_2 = rng.gen_range(0..elements.len());
 
-        let first = nodes.keys().nth(index_1).unwrap();
-        let second = nodes.keys().nth(index_2).unwrap();
+        let first = elements.keys().nth(index_1).unwrap();
+        let second = elements.keys().nth(index_2).unwrap();
 
         // Sort pairs so that we don't make the same query twice
         let pair_key = if first < second {
@@ -168,31 +168,31 @@ async fn do_combinations() {
             let pair_result = get_pair_value(first, second).await;
             pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
             if let Some(pair_result) = pair_result {
-                if !nodes.contains_key(&pair_result.result) {
+                if !elements.contains_key(&pair_result.result) {
                     if pair_result.is_new {
                         log::info!(
-                            "Discovered new node: {} (from {first} and {second})",
+                            "Discovered new element: {} (from {first} and {second})",
                             pair_result.result
                         );
                     } else {
                         log::info!(
-                            "New node: {} (from {first} and {second})",
+                            "New element: {} (from {first} and {second})",
                             pair_result.result
                         );
                     }
-                    nodes.insert(pair_result.result.clone(), pair_result);
+                    elements.insert(pair_result.result.clone(), pair_result);
                 }
             }
 
-            save(&nodes, &pairs);
+            save(&elements, &pairs);
 
             std::thread::sleep(Duration::from_millis(500));
         }
     }
 }
 
-fn merge_existing_nodes(elements_file_path: &str) {
-    let (mut nodes, pairs) = load();
+fn merge_existing_elements(elements_file_path: &str) {
+    let (mut elements, pairs) = load();
 
     let new_elements: SerializedElements = read_file_as_json(elements_file_path);
 
@@ -201,7 +201,7 @@ fn merge_existing_nodes(elements_file_path: &str) {
         .into_iter()
         .map(|element| Element::from(element))
     {
-        match nodes.entry(element.result.clone()) {
+        match elements.entry(element.result.clone()) {
             std::collections::btree_map::Entry::Vacant(vacant_entry) => {
                 log::info!("Inserting {}", element.result);
                 vacant_entry.insert(element);
@@ -218,7 +218,7 @@ fn merge_existing_nodes(elements_file_path: &str) {
         }
     }
 
-    save(&nodes, &pairs)
+    save(&elements, &pairs)
 }
 
 #[tokio::main]
@@ -229,8 +229,8 @@ async fn main() {
 
     match cli.command {
         Command::Combine => do_combinations().await,
-        Command::MergeExistingNodes { elements_file_path } => {
-            merge_existing_nodes(&elements_file_path)
+        Command::MergeExistingElements { elements_file_path } => {
+            merge_existing_elements(&elements_file_path)
         }
         Command::SerializeForPage => serialize_for_page(),
     }
