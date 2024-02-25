@@ -2,6 +2,7 @@ use clap::{Parser, Subcommand};
 use rand::{distributions::WeightedIndex, prelude::*};
 use reqwest::StatusCode;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
+use sqlx::{prelude::FromRow, SqlitePool};
 use std::{collections::BTreeMap, time::Duration, time::Instant};
 
 #[derive(Debug, Parser)]
@@ -30,12 +31,23 @@ enum Command {
     SerializeForPage,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Deserialize, FromRow)]
 #[serde(rename_all = "camelCase")]
 struct Element {
     pub result: String,
     pub emoji: String,
     pub is_new: bool,
+}
+impl Element {
+    pub async fn insert(&self, pool: &SqlitePool) {
+        sqlx::query("INSERT INTO elements (result, emoji, is_new) VALUES ($1, $2, $3)")
+            .bind(&self.result)
+            .bind(&self.emoji)
+            .bind(self.is_new)
+            .execute(pool)
+            .await
+            .unwrap();
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -89,32 +101,47 @@ where
     std::fs::write(file_path, contents).unwrap();
 }
 
-type Elements = BTreeMap<String, Element>;
-type Pairs = BTreeMap<String, Option<String>>;
+async fn insert_pair(pool: &SqlitePool, first: &str, second: &str, result: &Option<String>) {
+    sqlx::query("INSERT INTO pairs (first, second, result) VALUES ($1, $2, $3)")
+        .bind(first)
+        .bind(second)
+        .bind(result)
+        .execute(pool)
+        .await
+        .unwrap();
+}
 
-fn load() -> (Elements, Pairs) {
-    let elements: Elements = read_file_as_json("elements.json");
-    let pairs: Pairs = read_file_as_json("pairs.json");
+type Elements = BTreeMap<String, Element>;
+type Pairs = BTreeMap<(String, String), Option<String>>;
+
+async fn load(pool: &SqlitePool) -> (Elements, Pairs) {
+    let elements = sqlx::query_as::<_, Element>("SELECT * FROM elements")
+        .fetch_all(pool)
+        .await
+        .unwrap()
+        .into_iter()
+        .map(|element| (element.result.clone(), element))
+        .collect::<Elements>();
+
+    let pairs = sqlx::query_as::<_, (String, String, Option<String>)>("SELECT * FROM pairs")
+        .fetch_all(pool)
+        .await
+        .unwrap()
+        .into_iter()
+        .map(|(first, second, result)| ((first, second), result))
+        .collect::<Pairs>();
+
     (elements, pairs)
 }
 
-fn save(elements: &Elements, pairs: &Pairs) {
-    let start = Instant::now();
-
-    write_file_as_json("elements.json", elements, true);
-    write_file_as_json("pairs.json", pairs, true);
-
-    log::debug!("Saving took {} milliseconds", start.elapsed().as_millis())
-}
-
-fn serialize_for_page() {
-    let (elements, _) = load();
+async fn serialize_for_page(pool: SqlitePool) {
+    let (elements, _) = load(&pool).await;
 
     let elements = SerializedElements {
         elements: elements
             .values()
             .cloned()
-            .map(|element| SerializedElement::from(element))
+            .map(SerializedElement::from)
             .collect::<Vec<_>>(),
     };
     write_file_as_json("serialized_for_page.json", &elements, false);
@@ -149,7 +176,7 @@ async fn get_pair_value(client: &reqwest::Client, first: &str, second: &str) -> 
     }
 }
 
-async fn do_combinations() {
+async fn do_combinations(pool: SqlitePool) {
     let mut rng = thread_rng();
 
     let client = reqwest::Client::builder()
@@ -160,7 +187,7 @@ async fn do_combinations() {
         .build()
         .unwrap();
 
-    let (mut elements, mut pairs) = load();
+    let (mut elements, mut pairs) = load(&pool).await;
 
     loop {
         // Weight it towards shorter objects - an element with 1 letter is ~5x more likely to show up than an element with 10+ letters
@@ -176,9 +203,9 @@ async fn do_combinations() {
 
             // Sort pairs so that we don't make the same query twice
             let pair_key = if first < second {
-                format!("{first}|+|{second}")
+                (first.clone(), second.clone())
             } else {
-                format!("{second}|+|{first}")
+                (second.clone(), first.clone())
             };
 
             if !pairs.contains_key(&pair_key) {
@@ -187,7 +214,17 @@ async fn do_combinations() {
         };
 
         let pair_result = get_pair_value(&client, first, second).await;
+
+        // These two statements have to happen together - do not remove or change one without the other
         pairs.insert(pair_key.clone(), pair_result.clone().map(|p| p.result));
+        insert_pair(
+            &pool,
+            first,
+            second,
+            &pair_result.as_ref().map(|element| element.result.clone()),
+        )
+        .await;
+
         if let Some(pair_result) = pair_result {
             if !elements.contains_key(&pair_result.result) {
                 if pair_result.is_new {
@@ -201,57 +238,56 @@ async fn do_combinations() {
                         pair_result.result
                     );
                 }
+
+                // These two statements have to happen together - do not remove or change one without the other
+                pair_result.insert(&pool).await;
                 elements.insert(pair_result.result.clone(), pair_result);
             }
         }
-
-        save(&elements, &pairs);
 
         std::thread::sleep(Duration::from_millis(500));
     }
 }
 
-fn merge_existing_elements(elements_file_path: &str) {
-    let (mut elements, pairs) = load();
-
+async fn merge_existing_elements(pool: SqlitePool, elements_file_path: &str) {
     let new_elements: SerializedElements = read_file_as_json(elements_file_path);
 
-    for element in new_elements
-        .elements
-        .into_iter()
-        .map(|element| Element::from(element))
-    {
-        match elements.entry(element.result.clone()) {
-            std::collections::btree_map::Entry::Vacant(vacant_entry) => {
-                log::info!("Inserting {}", element.result);
-                vacant_entry.insert(element);
+    for element in new_elements.elements.into_iter().map(Element::from) {
+        if let Some(matching_element) =
+            sqlx::query_as::<_, Element>("SELECT * FROM elements WHERE result = $1")
+                .bind(&element.result)
+                .fetch_optional(&pool)
+                .await
+                .unwrap()
+        {
+            if matching_element != element {
+                panic!(
+                    "Non-matching elements despite matching names\n{:?}\n{:?}",
+                    matching_element, element
+                )
             }
-            std::collections::btree_map::Entry::Occupied(entry) => {
-                if entry.get() != &element {
-                    panic!(
-                        "Non-matching elements despite matching names\n{:?}\n{:?}",
-                        entry.get(),
-                        element
-                    )
-                }
-            }
+        } else {
+            log::info!("Inserting {}", element.result);
+            element.insert(&pool).await;
         }
     }
-
-    save(&elements, &pairs)
 }
 
 #[tokio::main]
 async fn main() {
     simple_logger::init_with_level(log::Level::Info).unwrap();
 
+    let pool = SqlitePool::connect("sqlite:infinite-craft.db")
+        .await
+        .unwrap();
+
     let cli = Cli::parse();
 
     match cli.command {
-        Command::Combine => do_combinations().await,
+        Command::Combine => do_combinations(pool).await,
         Command::MergeExistingElements { elements_file_path } => {
-            merge_existing_elements(&elements_file_path)
+            merge_existing_elements(pool, &elements_file_path).await
         }
-        Command::SerializeForPage => serialize_for_page(),
+        Command::SerializeForPage => serialize_for_page(pool).await,
     }
 }
